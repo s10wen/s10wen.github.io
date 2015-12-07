@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <title>
+    Output ls contents of a server directory using bash | Simon Owen | Front-End Developer
+  </title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="keywords" content="front-end developer,manchester,s10wen,simon owen,upfrontconf,mcrfred">
+  <meta name="description" content="I’m getting really excited spending more and more time using the command line.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Output ls contents of a server directory using bash">
+<meta property="og:url" content="http://s10wen.com/blog/2014/07/22/output-ls-contents-of-a-server-directory-using-bash/index.html">
+<meta property="og:site_name" content="Simon Owen">
+<meta property="og:description" content="I’m getting really excited spending more and more time using the command line.">
+<meta property="og:updated_time" content="2015-12-06T13:56:06.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Output ls contents of a server directory using bash">
+<meta name="twitter:description" content="I’m getting really excited spending more and more time using the command line.">
+<meta name="twitter:creator" content="@s10wen">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-9016310-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+
+  <!--[if lt IE 10]>
+    <style>
+      #header-grad {
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', endColorstr='#8c00ff',GradientType=1 ); /* IE6-9 */
+      }
+    </style>
+  <![endif]-->
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <style>
+      .outer {
+        max-width: 672px;
+      }
+    </style>
+  <![endif]-->
+
+  <!-- Google Analytics because other methods didn't work, sigh -->
+  <meta name="google-site-verification" content="p53V9PXu9GYzN6QxFvWyDUTyNux_7k7G4sKxVk3YEnY">
+
+</head>
+
+<body>
+  <header id="header">
+  <div id="header-outer">
+    <div class="header-logo-wrap">
+      <a class="header-link" href="/">
+        
+            <span class="header-title">Simon Owen</span>
+            <span class="header-subtitle">Front-End Developer</span>
+        
+      </a>
+    </div>
+    <div class="main-nav-wrap">
+      <nav id="main-nav">
+        
+          <a class="main-nav-link" href="/">Blog</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/work">Work</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+      </nav>
+    </div>
+  </div>
+  <div id="mug"></div>
+  <div id="header-grad"></div>
+</header>
+
+  <div class="outer">
+    <section id="main"><article id="post-output-ls-contents-of-a-server-directory-using-bash" class="article article-type-post">
+
+  
+    <div class="article-meta">
+      <div class="article-time">
+  <span class="article-meta-title">posted on</span>
+  <a class="article-time-link" href="/blog/2014/07/22/output-ls-contents-of-a-server-directory-using-bash/">
+    <time datetime="2014-07-22T17:43:00.000Z">2014-07-22</time>
+  </a>
+</div>
+
+      
+  <div class="article-category">
+    <span class="article-meta-title">categories</span>
+    <a class="article-category-link" href="/blog/categories/bash/">bash</a>
+  </div>
+
+
+    </div>
+  
+
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title">
+      Output ls contents of a server directory using bash
+    </h1>
+  
+
+
+      </header>
+    
+    
+      <p>I’m getting really excited spending more and more time using the command line.</p>
+<a id="more"></a>
+<p>Today I had an issue, I wanted to write a script that would ssh into a server and save the <code>ls</code> from a certain path.</p>
+<p>If you’re not familiar with bash, <code>ls -al</code> will list everything in a vertical list like this:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ ls -al</span><br><span class="line"></span><br><span class="line">total <span class="number">109</span></span><br><span class="line">drwxr-xr-x  <span class="number">18</span> root     root         <span class="number">4096</span> Jun  <span class="number">9</span> <span class="number">21</span>:<span class="number">12</span> ./</span><br><span class="line">drwxr-xr-x  <span class="number">18</span> root     root         <span class="number">4096</span> Jun  <span class="number">9</span> <span class="number">21</span>:<span class="number">12</span> ../</span><br><span class="line">drwxr-xr-x   <span class="number">2</span> root     root         <span class="number">4096</span> Jun  <span class="number">9</span> <span class="number">21</span>:<span class="number">14</span> bin/</span><br><span class="line">drwxr-xr-x   <span class="number">3</span> root     root         <span class="number">1024</span> Jun  <span class="number">9</span> <span class="number">20</span>:<span class="number">32</span> boot/</span><br><span class="line">drwxr-xr-x   <span class="number">6</span> root     root        <span class="number">36864</span> Jul <span class="number">12</span> <span class="number">10</span>:<span class="number">26</span> dev/</span><br><span class="line">drwxr-xr-x  <span class="number">34</span> root     root         <span class="number">4096</span> Jul <span class="number">12</span> <span class="number">10</span>:<span class="number">25</span> etc/</span><br></pre></td></tr></table></figure>
+<p>I thought about how I’d do this with my limited knowledge of bash and did some googling but didn’t get anywhere.</p>
+<p>I sent out a tweet and copied in a few people.</p>
+<p><blockquote class="twitter-tweet" lang="en"><p>Please help bash friends, copy <code>ls -al</code> from a server to local txt file <a href="https://t.co/R1w0Pe1m8P" target="_blank" rel="external">https://t.co/R1w0Pe1m8P</a> +<a href="https://twitter.com/sindresorhus" target="_blank" rel="external">@sindresorhus</a> <a href="https://twitter.com/mathias" target="_blank" rel="external">@mathias</a> <a href="https://twitter.com/csswizardry" target="_blank" rel="external">@csswizardry</a></p>&mdash; Simon Owen (@s10wen) <a href="https://twitter.com/s10wen/statuses/491557019766493184" target="_blank" rel="external">July 22, 2014</a></blockquote></p>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>Within 10 minutes, a few awesome people had replied all with solutions.</p>
+<p><blockquote class="twitter-tweet" data-conversation="none" lang="en"><p><a href="https://twitter.com/s10wen" target="_blank" rel="external">@s10wen</a> <a href="https://twitter.com/sindresorhus" target="_blank" rel="external">@sindresorhus</a> <a href="https://twitter.com/mathias" target="_blank" rel="external">@mathias</a> <a href="https://twitter.com/csswizardry" target="_blank" rel="external">@csswizardry</a> output to file with &gt;&gt; then scp the file from the server?</p>&mdash; Ash Davies (@erraticwelshie) <a href="https://twitter.com/erraticwelshie/statuses/491557558189318144" target="_blank" rel="external">July 22, 2014</a></blockquote></p>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p><blockquote class="twitter-tweet" data-conversation="none" data-cards="hidden" lang="en"><p><a href="https://twitter.com/s10wen" target="_blank" rel="external">@s10wen</a> <a href="https://twitter.com/sindresorhus" target="_blank" rel="external">@sindresorhus</a> <a href="https://twitter.com/mathias" target="_blank" rel="external">@mathias</a> <a href="http://t.co/mxwDGZPDXL" target="_blank" rel="external">http://t.co/mxwDGZPDXL</a> ?</p>&mdash; Harry Roberts (@csswizardry) <a href="https://twitter.com/csswizardry/statuses/491557760891621376" target="_blank" rel="external">July 22, 2014</a></blockquote></p>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p><blockquote class="twitter-tweet" data-conversation="none" lang="en"><p><a href="https://twitter.com/s10wen" target="_blank" rel="external">@s10wen</a> If all you need is <code>ls -al</code> output, run <code>ssh host &amp;#39;ls -al /some/path&amp;#39; &amp;gt; foo.txt</code> on your local machine. +<a href="https://twitter.com/sindresorhus" target="_blank" rel="external">@sindresorhus</a> <a href="https://twitter.com/csswizardry" target="_blank" rel="external">@csswizardry</a></p>&mdash; Mathias Bynens (@mathias) <a href="https://twitter.com/mathias/statuses/491558207475965952" target="_blank" rel="external">July 22, 2014</a></blockquote></p>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>This is a shout out to everyone that is so freaking awesome (sorry Harry, I know I’m not American, but how I love the word :wink:) and willing to take time out of their day to help.</p>
+<p>With the information above I was able to put a little script together:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="shebang">#!/bin/bash</span><br><span class="line"></span></span><br><span class="line">ssh server1@wherever.com <span class="string">'ls -al /where/you/want/'</span> &gt; server1.txt</span><br><span class="line">ssh server2@wherever.com <span class="string">'ls -al /where/you/want/'</span> &gt; server2.txt</span><br><span class="line">ssh server3@wherever.com <span class="string">'ls -al /where/you/want/'</span> &gt; server3.txt</span><br></pre></td></tr></table></figure>
+<p>Now I have a directory locally called <code>server</code> that has a file in called <code>server.sh</code>, I can <code>cd</code> to it and run <code>bash server.sh</code> and I end up with the <code>ls -al</code> contents of the servers.</p>
+<p><a href="https://gist.github.com/s10wen/6cf00ab86b96e5d1fa9c" target="_blank" rel="external">https://gist.github.com/s10wen/6cf00ab86b96e5d1fa9c</a></p>
+<p>Niiiiiiiiiiiiiiiiiiice.</p>
+
+    
+  </div>
+  
+    <div class="twitter-share-link">
+  <a href="https://twitter.com/intent/tweet?url=http://s10wen.com/blog/2014/07/22/output-ls-contents-of-a-server-directory-using-bash/&amp;text=~@s10wen&amp;related=s10wen">
+    <p>Share or comment on this post via Twitter @s10wen</p>
+  </a>
+</div>
+
+    
+<nav id="article-nav">
+  
+    <a href="/blog/2014/07/16/manchester-wordpress-user-group-july/" id="article-nav-older" class="article-nav-link-wrap">
+      <p class="article-nav-caption">older post</p>
+      <p class="article-nav-title">Manchester WordPress User Group May</p>
+    </a>
+  
+  
+    <a href="/blog/2014/07/24/creating-music-with-clojure-and-overtone-with-chris-ford/" id="article-nav-newer" class="article-nav-link-wrap">
+      <p class="article-nav-caption">newer post</p>
+      <p class="article-nav-title">
+        
+          Creating music with Clojure and Overtone with Chris Ford
+        
+      </p>
+    </a>
+  
+</nav>
+
+
+  
+</article>
+</section>
+  </div>
+  <footer id="footer">
+  <div id="footer-grad"></div>
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      © 2004-2015 <span class="split">/</span> Simon Owen <span class="split">/</span> <a href="http://twitter.com/s10wen">@s10wen</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
