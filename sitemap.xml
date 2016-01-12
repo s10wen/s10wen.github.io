@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://s10wen.com/blog/2015/09/26/mcrfred-29-katie-fenn-on-chrome-dev-tools-and-measuring-css-with-parker-videos/</loc>
+    <lastmod>2016-01-12T19:07:00.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://s10wen.com/blog/2015/11/02/mcrfred-32-ben-frain-architecting-maintaining-large-scale-css-codebases/</loc>
+    <lastmod>2016-01-12T19:06:45.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://s10wen.com/blog/2016/01/12/mcrfred-34-damien-seguin-from-unit9/</loc>
+    <lastmod>2016-01-12T19:06:32.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://s10wen.com/faces/index.html</loc>
     <lastmod>2015-12-09T23:54:34.000Z</lastmod>
   </url>
@@ -34,16 +49,6 @@
   <url>
     <loc>http://s10wen.com/clients/index.html</loc>
     <lastmod>2015-12-06T13:56:07.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://s10wen.com/blog/2015/09/26/mcrfred-29-katie-fenn-on-chrome-dev-tools-and-measuring-css-with-parker-videos/</loc>
-    <lastmod>2015-12-06T13:56:06.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://s10wen.com/blog/2015/09/26/footime-x2-s10wen-pretending-jamie-oliver/</loc>
-    <lastmod>2015-12-06T13:56:06.000Z</lastmod>
   </url>
   
   <url>
@@ -467,12 +472,12 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2013/09/28/mcrfred-07-videos-chris-mills-on-the-importance-of-documentation/</loc>
+    <loc>http://s10wen.com/blog/2015/11/07/ffconf-2015/</loc>
     <lastmod>2015-12-06T13:56:06.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2015/11/10/mcrfred-33-christmas-social/</loc>
+    <loc>http://s10wen.com/blog/2013/09/11/some-awesome-things/</loc>
     <lastmod>2015-12-06T13:56:06.000Z</lastmod>
   </url>
   
@@ -912,16 +917,6 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2015/11/07/ffconf-2015/</loc>
-    <lastmod>2015-12-06T13:56:06.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://s10wen.com/blog/2015/11/02/mcrfred-32-ben-frain-architecting-maintaining-large-scale-css-codebases/</loc>
-    <lastmod>2015-12-06T13:56:06.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://s10wen.com/blog/2015/10/18/getting-ready-for-mount-toubkal-october-2015/</loc>
     <lastmod>2015-12-06T13:56:06.000Z</lastmod>
   </url>
@@ -937,7 +932,17 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2013/09/11/some-awesome-things/</loc>
+    <loc>http://s10wen.com/blog/2015/11/10/mcrfred-33-christmas-social/</loc>
+    <lastmod>2015-12-06T13:56:06.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://s10wen.com/blog/2015/09/26/footime-x2-s10wen-pretending-jamie-oliver/</loc>
+    <lastmod>2015-12-06T13:56:06.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://s10wen.com/blog/2013/09/28/mcrfred-07-videos-chris-mills-on-the-importance-of-documentation/</loc>
     <lastmod>2015-12-06T13:56:06.000Z</lastmod>
   </url>
   
