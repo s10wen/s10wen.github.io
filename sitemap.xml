@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://s10wen.com/upup.js</loc>
+    <lastmod>2016-01-19T12:38:39.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://s10wen.com/upup.sw.js</loc>
+    <lastmod>2016-01-19T11:59:33.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://s10wen.com/blog/2016/01/12/mcrfred-34-damien-seguin-from-unit9/</loc>
     <lastmod>2016-01-14T17:20:44.000Z</lastmod>
   </url>
@@ -49,16 +59,6 @@
   <url>
     <loc>http://s10wen.com/clients/index.html</loc>
     <lastmod>2015-12-06T13:56:07.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://s10wen.com/blog/2015/09/18/footime-s10wen-pretending-jamie-oliver/</loc>
-    <lastmod>2015-12-06T13:56:06.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://s10wen.com/blog/2015/09/03/McrFRED-30-Freelance-Special/</loc>
-    <lastmod>2015-12-06T13:56:06.000Z</lastmod>
   </url>
   
   <url>
@@ -472,12 +472,12 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2015/11/07/ffconf-2015/</loc>
+    <loc>http://s10wen.com/blog/2013/09/28/mcrfred-07-videos-chris-mills-on-the-importance-of-documentation/</loc>
     <lastmod>2015-12-06T13:56:06.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2013/09/11/some-awesome-things/</loc>
+    <loc>http://s10wen.com/blog/2015/11/07/ffconf-2015/</loc>
     <lastmod>2015-12-06T13:56:06.000Z</lastmod>
   </url>
   
@@ -942,7 +942,17 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2013/09/28/mcrfred-07-videos-chris-mills-on-the-importance-of-documentation/</loc>
+    <loc>http://s10wen.com/blog/2015/09/18/footime-s10wen-pretending-jamie-oliver/</loc>
+    <lastmod>2015-12-06T13:56:06.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://s10wen.com/blog/2015/09/03/McrFRED-30-Freelance-Special/</loc>
+    <lastmod>2015-12-06T13:56:06.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://s10wen.com/blog/2013/09/11/some-awesome-things/</loc>
     <lastmod>2015-12-06T13:56:06.000Z</lastmod>
   </url>
   
