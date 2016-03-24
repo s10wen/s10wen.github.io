@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://s10wen.com/faces/index.html</loc>
+    <lastmod>2016-03-24T12:35:54.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://s10wen.com/blog/2016/03/17/smashing-conf-2016/</loc>
     <lastmod>2016-03-21T18:43:02.000Z</lastmod>
   </url>
@@ -54,11 +59,6 @@
   <url>
     <loc>http://s10wen.com/blog/2015/11/02/mcrfred-32-ben-frain-architecting-maintaining-large-scale-css-codebases/</loc>
     <lastmod>2016-01-12T19:06:45.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://s10wen.com/faces/index.html</loc>
-    <lastmod>2015-12-09T23:54:34.000Z</lastmod>
   </url>
   
   <url>
