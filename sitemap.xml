@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://s10wen.com/blog/2009/06/23/everything-everything-photoshop-handsome/</loc>
+    <lastmod>2016-04-18T17:49:44.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://s10wen.com/blog/2015/08/15/post-SVG-Icons-Sublime-Text-Package/</loc>
     <lastmod>2016-04-18T17:45:53.000Z</lastmod>
   </url>
@@ -94,11 +99,6 @@
   <url>
     <loc>http://s10wen.com/clients/index.html</loc>
     <lastmod>2015-12-06T13:56:07.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://s10wen.com/blog/2015/11/07/ffconf-2015/</loc>
-    <lastmod>2015-12-06T13:56:06.000Z</lastmod>
   </url>
   
   <url>
@@ -922,7 +922,7 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2009/06/23/everything-everything-photoshop-handsome/</loc>
+    <loc>http://s10wen.com/blog/2015/10/17/indie-game-the-movie-my-attempt-at-making-a-game/</loc>
     <lastmod>2015-12-06T13:56:06.000Z</lastmod>
   </url>
   
@@ -943,11 +943,6 @@
   
   <url>
     <loc>http://s10wen.com//404.html</loc>
-    <lastmod>2015-12-06T13:56:06.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://s10wen.com/blog/2015/10/17/indie-game-the-movie-my-attempt-at-making-a-game/</loc>
     <lastmod>2015-12-06T13:56:06.000Z</lastmod>
   </url>
   
@@ -973,6 +968,11 @@
   
   <url>
     <loc>http://s10wen.com/blog/2015/09/03/McrFRED-30-Freelance-Special/</loc>
+    <lastmod>2015-12-06T13:56:06.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://s10wen.com/blog/2015/11/07/ffconf-2015/</loc>
     <lastmod>2015-12-06T13:56:06.000Z</lastmod>
   </url>
   
