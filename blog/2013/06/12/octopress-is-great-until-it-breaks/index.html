@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <title>
+    Octopress is great until it breaks | Simon Owen | Front-End Developer
+  </title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="keywords" content="front-end developer,manchester,s10wen,simon owen,upfrontconf,mcrfred">
+  <meta name="description" content="Since using Octopress I’ve found it mostly to be awesome, but sometimes I encounter issues and now having used it a while and had a look around the file / folder structure I’m not entirely convinced I">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Octopress is great until it breaks">
+<meta property="og:url" content="http://s10wen.com/blog/2013/06/12/octopress-is-great-until-it-breaks/index.html">
+<meta property="og:site_name" content="Simon Owen">
+<meta property="og:description" content="Since using Octopress I’ve found it mostly to be awesome, but sometimes I encounter issues and now having used it a while and had a look around the file / folder structure I’m not entirely convinced I">
+<meta property="og:image" content="http://s10wen.com/blog/2013-06-12/oops.jpg">
+<meta property="og:image" content="http://s10wen.com/blog/2013-06-12/folder-path-01-source.png">
+<meta property="og:image" content="http://s10wen.com/blog/2013-06-12/folder-path-02-blog.png">
+<meta property="og:image" content="http://s10wen.com/blog/2013-06-12/folder-path-03-deploy.png">
+<meta property="og:image" content="http://s10wen.com/blog/2013-06-12/github-commit-01-with.png">
+<meta property="og:image" content="http://s10wen.com/blog/2013-06-12/github-commit-02-without.png">
+<meta property="og:image" content="http://s10wen.com/blog/2013-06-12/github-page-build-failed.png">
+<meta property="og:updated_time" content="2016-03-03T20:20:16.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Octopress is great until it breaks">
+<meta name="twitter:description" content="Since using Octopress I’ve found it mostly to be awesome, but sometimes I encounter issues and now having used it a while and had a look around the file / folder structure I’m not entirely convinced I">
+<meta name="twitter:image" content="http://s10wen.com/blog/2013-06-12/oops.jpg">
+<meta name="twitter:creator" content="@s10wen">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-9016310-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+
+  <!--[if lt IE 10]>
+    <style>
+      #header-grad {
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', endColorstr='#8c00ff',GradientType=1 ); /* IE6-9 */
+      }
+    </style>
+  <![endif]-->
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <style>
+      .outer {
+        max-width: 672px;
+      }
+    </style>
+  <![endif]-->
+
+  <!-- Google Analytics because other methods didn't work, sigh -->
+  <meta name="google-site-verification" content="p53V9PXu9GYzN6QxFvWyDUTyNux_7k7G4sKxVk3YEnY">
+
+</head>
+
+<body>
+  <header id="header">
+  <div id="header-outer">
+    <div class="header-logo-wrap">
+      <a class="header-link" href="/">
+        
+            <span class="header-title">Simon Owen</span>
+            <span class="header-subtitle">Front-End Developer</span>
+        
+      </a>
+    </div>
+    <div class="main-nav-wrap">
+      <nav id="main-nav">
+        
+          <a class="main-nav-link" href="/">Blog</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/work">Work</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+      </nav>
+    </div>
+  </div>
+  <div id="mug"></div>
+  <div id="header-grad"></div>
+</header>
+
+  <div class="outer">
+    <section id="main"><article id="post-octopress-is-great-until-it-breaks" class="article article-type-post">
+
+  
+    <div class="article-meta">
+      <div class="article-time">
+  <span class="article-meta-title">posted on</span>
+  <a class="article-time-link" href="/blog/2013/06/12/octopress-is-great-until-it-breaks/">
+    <time datetime="2013-06-12T00:08:00.000Z">2013-06-12</time>
+  </a>
+</div>
+
+      
+  <div class="article-category">
+    <span class="article-meta-title">categories</span>
+    <a class="article-category-link" href="/blog/categories/octopress/">octopress</a>
+  </div>
+
+
+    </div>
+  
+
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title">
+      Octopress is great until it breaks
+    </h1>
+  
+
+
+      </header>
+    
+    
+      <p>Since using Octopress I’ve found it mostly to be awesome, but sometimes I encounter issues and now having used it a while and had a look around the file / folder structure I’m not entirely convinced I’ve got it setup correct.</p>
+<p>I’ve documented my current process, in the hopes that someone who knows what they’re doing can point me in the right direction and help others who might be having the same issues.</p>
+<a id="more"></a>
+<p><img src="/blog/2013-06-12/oops.jpg" alt="Oops"></p>
+<p>To start off I do a:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rake preview</span><br></pre></td></tr></table></figure>
+<p>Then open up my browser and go to:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">localhost:4000</span><br></pre></td></tr></table></figure>
+<p>Sweet. I can now view the site locally, edit a page in Sublime Text 2 and view the changes in the browser.</p>
+<h3 id="Question-1"><a href="#Question-1" class="headerlink" title="Question 1"></a>Question 1</h3><p><strong>I then have to hit refresh a bunch of times, before I see the changes, I love LiveReload an app that pushes changes to the browser so you don’t have to hit refresh. I’m guessing that when I edit and then save a document Octopress is rebuilding the whole site? If that’s the case, is it possible when editing a post to just rebuild that page and have it automatically pushed to the browser?</strong></p>
+<p>Now I’m happy with the post and want to push the changes live.</p>
+<p>So I go back to Terminal and open a new tab as the current tab is now running the preview site and throwing out:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">[2013-06-12 18:51:36] regeneration: 1 files changed</span><br><span class="line">[2013-06-12 18:51:51] regeneration: 1 files changed</span><br><span class="line">127.0.0.1 - - [12/Jun/2013 18:51:53] <span class="string">"GET /blog/2012/05/28/amir-khan/ HTTP/1.1"</span> 200 9983 0.0021</span><br><span class="line">127.0.0.1 - - [12/Jun/2013 18:51:53] <span class="string">"GET /stylesheets/screen.css HTTP/1.1"</span> 304 - 0.0013</span><br><span class="line">[2013-06-12 18:51:53] WARN  Could not determine content-length of response body. Set content-length of the response or <span class="built_in">set</span> Response<span class="comment">#chunked = true</span></span><br><span class="line">127.0.0.1 - - [12/Jun/2013 18:51:53] <span class="string">"GET /javascripts/twitter.js HTTP/1.1"</span> 304 - 0.0008</span><br><span class="line">127.0.0.1 - - [12/Jun/2013 18:51:53] <span class="string">"GET /javascripts/modernizr-2.0.js HTTP/1.1"</span> 304 - 0.0011</span><br><span class="line">127.0.0.1 - - [12/Jun/2013 18:51:53] <span class="string">"GET /javascripts/octopress.js HTTP/1.1"</span> 304 - 0.0008</span><br><span class="line">[2013-06-12 18:51:53] WARN  Could not determine content-length of response body. Set content-length of the response or <span class="built_in">set</span> Response<span class="comment">#chunked = true</span></span><br><span class="line">127.0.0.1 - - [12/Jun/2013 18:51:53] <span class="string">"GET /javascripts/ender.js HTTP/1.1"</span> 304 - 0.0014</span><br><span class="line">[2013-06-12 18:51:53] WARN  Could not determine content-length of response body. Set content-length of the response or <span class="built_in">set</span> Response<span class="comment">#chunked = true</span></span><br><span class="line">[2013-06-12 18:51:53] WARN  Could not determine content-length of response body. Set content-length of the response or <span class="built_in">set</span> Response<span class="comment">#chunked = true</span></span><br><span class="line">127.0.0.1 - - [12/Jun/2013 18:51:53] <span class="string">"GET /javascripts/github.js HTTP/1.1"</span> 304 - 0.0013</span><br><span class="line">[2013-06-12 18:51:53] WARN  Could not determine content-length of response body. Set content-length of the response or <span class="built_in">set</span> Response<span class="comment">#chunked = true</span></span><br><span class="line">[2013-06-12 18:51:53] WARN  Could not determine content-length of response body. Set content-length of the response or <span class="built_in">set</span> Response<span class="comment">#chunked = true</span></span><br><span class="line">127.0.0.1 - - [12/Jun/2013 18:51:53] <span class="string">"GET /images/bg.png?1362690453 HTTP/1.1"</span> 304 - 0.0010</span><br><span class="line">[2013-06-12 18:51:53] WARN  Could not determine content-length of response body. Set content-length of the response or <span class="built_in">set</span> Response<span class="comment">#chunked = true</span></span><br><span class="line">127.0.0.1 - - [12/Jun/2013 18:51:53] <span class="string">"GET /images/about-me-photo.jpg HTTP/1.1"</span> 304 - 0.0010</span><br><span class="line">[2013-06-12 18:51:53] WARN  Could not determine content-length of response body. Set content-length of the response or <span class="built_in">set</span> Response<span class="comment">#chunked = true</span></span><br><span class="line">127.0.0.1 - - [12/Jun/2013 18:51:53] <span class="string">"GET /images/noise.png?1362088035 HTTP/1.1"</span> 304 - 0.0011</span><br><span class="line">[2013-06-12 18:51:53] WARN  Could not determine content-length of response body. Set content-length of the response or <span class="built_in">set</span> Response<span class="comment">#chunked = true</span></span><br><span class="line">127.0.0.1 - - [12/Jun/2013 18:51:53] <span class="string">"GET /images/rss.png?1362088035 HTTP/1.1"</span> 304 - 0.0011</span><br><span class="line">[2013-06-12 18:51:53] WARN  Could not determine content-length of response body. Set content-length of the response or <span class="built_in">set</span> Response<span class="comment">#chunked = true</span></span><br><span class="line">127.0.0.1 - - [12/Jun/2013 18:51:53] <span class="string">"GET /javascripts/libs/jXHR.js HTTP/1.1"</span> 304 - 0.0010</span><br><span class="line">[2013-06-12 18:51:53] WARN  Could not determine content-length of response body. Set content-length of the response or <span class="built_in">set</span> Response<span class="comment">#chunked = true</span></span><br><span class="line">[2013-06-12 19:19:36] regeneration: 1 files changed</span><br></pre></td></tr></table></figure>
+<h3 id="Question-2"><a href="#Question-2" class="headerlink" title="Question 2"></a>Question 2</h3><p><strong>Is it ok to keep the preview going whilst generating, deploying, pushing? I’d like to as there’s instances where I want to write multiple posts. Also are the WARN errors something to be concerned about?</strong></p>
+<p>Next I do:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure>
+<p>Now I see a list of all the public files that have changed, most of these are just minor changes to the navigation on each page.</p>
+<h3 id="Question-3"><a href="#Question-3" class="headerlink" title="Question 3"></a>Question 3</h3><p><strong>Is it possible to just check over the source files and auto-update the minor changes?</strong></p>
+<p>Next as per <a href="http://octopress.org/docs/deploying/github/" target="_blank" rel="external">http://octopress.org/docs/deploying/github/</a> I Run:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rake generate</span><br><span class="line">rake deploy</span><br></pre></td></tr></table></figure>
+<p>Or I found out you can run these in one go using <code>rake gen_deploy</code>.</p>
+<h3 id="Question-4"><a href="#Question-4" class="headerlink" title="Question 4"></a>Question 4</h3><p><strong>I take it <code>rake gen_deploy</code> does exactly the same thing as running them separately?</strong></p>
+<p>After running that, I get:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">$ rake gen_deploy</span><br><span class="line"><span class="comment">## Generating Site with Jekyll</span></span><br><span class="line">unchanged sass/screen.scss</span><br><span class="line">Configuration from /Applications/MAMP/htdocs/GitHub/simonowendesign.github.com/_config.yml</span><br><span class="line">Building site: <span class="built_in">source</span> -&gt; public</span><br><span class="line">Successfully generated site: <span class="built_in">source</span> -&gt; public</span><br><span class="line"><span class="comment">## Deploying branch to Github Pages</span></span><br><span class="line">rm -rf _deploy/about</span><br><span class="line">rm -rf _deploy/assets</span><br><span class="line">rm -rf _deploy/atom.xml</span><br><span class="line">rm -rf _deploy/blog</span><br><span class="line">rm -rf _deploy/clients</span><br><span class="line">rm -rf _deploy/CNAME</span><br><span class="line">rm -rf _deploy/contact</span><br><span class="line">rm -rf _deploy/favicon.png</span><br><span class="line">rm -rf _deploy/how-to-automatically-compile<span class="_">-a</span>-sass-file-refresh-your-browser-and-iphone-using-livereload-with-mamp-and-wordpress</span><br><span class="line">rm -rf _deploy/images</span><br><span class="line">rm -rf _deploy/index.html</span><br><span class="line">rm -rf _deploy/installing-sublime-text-2-on-lxde-linux-useful-for-raspberry-pi</span><br><span class="line">rm -rf _deploy/javascripts</span><br><span class="line">rm -rf _deploy/mac-os-x-osx-dotfile</span><br><span class="line">rm -rf _deploy/make-google-chrome-canary-default-browser</span><br><span class="line">rm -rf _deploy/mother-effing-dotfiles</span><br><span class="line">rm -rf _deploy/robots.txt</span><br><span class="line">rm -rf _deploy/sitemap.xml</span><br><span class="line">rm -rf _deploy/stylesheets</span><br><span class="line">rm -rf _deploy/styling-the-chrome-dev-tools</span><br><span class="line"></span><br><span class="line"><span class="comment">## copying public to _deploy</span></span><br><span class="line">cp -r public/. _deploy</span><br><span class="line"><span class="built_in">cd</span> _deploy</span><br><span class="line"></span><br><span class="line"><span class="comment">## Commiting: Site updated at 2013-06-12 17:57:43 UTC</span></span><br><span class="line">[master 8a04cc7] Site updated at 2013-06-12 17:57:43 UTC</span><br><span class="line"> 18 files changed, 49 insertions(+), 25 deletions(-)</span><br><span class="line"></span><br><span class="line"><span class="comment">## Pushing generated _deploy website</span></span><br><span class="line">Counting objects: 87, done.</span><br><span class="line">Delta compression using up to 4 threads.</span><br><span class="line">Compressing objects: 100% (39/39), done.</span><br><span class="line">Writing objects: 100% (44/44), 3.79 KiB, done.</span><br><span class="line">Total 44 (delta 23), reused 0 (delta 0)</span><br><span class="line">To git@github.com:simonowendesign/simonowendesign.github.com</span><br><span class="line">   78289d5..8a04cc7  master -&gt; master</span><br><span class="line"></span><br><span class="line"><span class="comment">## Github Pages deploy complete</span></span><br><span class="line"><span class="built_in">cd</span> -</span><br></pre></td></tr></table></figure>
+<p>All looks ok, so I go to:</p>
+<p><a href="http://github.com/simonowendesign/simonowendesign.github.io" target="_blank" rel="external">http://github.com/simonowendesign/simonowendesign.github.io</a></p>
+<p>Again, all looks ok. Then check:</p>
+<p><a href="http://simonowendesign.co.uk" target="_blank" rel="external">http://simonowendesign.co.uk</a></p>
+<p>Everything ok, cool.</p>
+<p>Now again as per:</p>
+<p><a href="http://octopress.org/docs/deploying/github/" target="_blank" rel="external">http://octopress.org/docs/deploying/github/</a></p>
+<p>Commit the source:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
+<p>But now I’m getting a <code>source.old</code> folder with a whole bunch of stuff in.</p>
+<p>At this point I should mention last night I ran into an issue that caused my site to go down and hence the reason for this post and further investigation. At this point I was also trying out <code>published: false</code>. Each post, at the top of the page has some ‘yaml front matter’:</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">layout:</span> post</span><br><span class="line"><span class="attr">title:</span> <span class="string">"Manchester forking FRED merge batman"</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2013</span><span class="bullet">-06</span><span class="bullet">-01</span> <span class="number">08</span>:<span class="number">56</span></span><br><span class="line"><span class="attr">categories:</span> mcrfred</span><br><span class="line"><span class="attr">published:</span> <span class="literal">false</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+<p>Adding <code>published: false</code> to this allows you to preview the post locally, but it won’t be deployed to live. At first I thought my site breaking might have been something to do with that so I removed the markdown file, the site worked fine locally, but not when pushed live. So then I ran the install commands again in case anything needed updating.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">$ gem install bundler</span><br><span class="line">bundle install</span><br><span class="line">rake install</span><br><span class="line">Successfully installed bundler-1.3.5</span><br><span class="line">1 gem installed</span><br><span class="line">Installing ri documentation <span class="keyword">for</span> bundler-1.3.5...</span><br><span class="line">Installing RDoc documentation <span class="keyword">for</span> bundler-1.3.5...</span><br><span class="line">/Applications/MAMP/htdocs/github/simonowendesign.github.com on master</span><br><span class="line">$ bundle install</span><br><span class="line">Using rake (0.9.2.2)</span><br><span class="line">Using RedCloth (4.2.9)</span><br><span class="line">Using chunky_png (1.2.5)</span><br><span class="line">Using fast-stemmer (1.0.1)</span><br><span class="line">Using classifier (1.3.3)</span><br><span class="line">Using fssm (0.2.9)</span><br><span class="line">Using sass (3.1.20)</span><br><span class="line">Using compass (0.12.2)</span><br><span class="line">Using directory_watcher (1.4.1)</span><br><span class="line">Using gemoji (1.4.0)</span><br><span class="line">Using haml (3.1.7)</span><br><span class="line">Using kramdown (0.13.8)</span><br><span class="line">Using liquid (2.3.0)</span><br><span class="line">Using syntax (1.0.0)</span><br><span class="line">Using maruku (0.6.1)</span><br><span class="line">Using posix-spawn (0.3.6)</span><br><span class="line">Using yajl-ruby (1.1.0)</span><br><span class="line">Using pygments.rb (0.3.4)</span><br><span class="line">Using jekyll (0.12.0)</span><br><span class="line">Using rack (1.4.5)</span><br><span class="line">Using rack-protection (1.3.2)</span><br><span class="line">Using rb-fsevent (0.9.1)</span><br><span class="line">Using rdiscount (1.6.8)</span><br><span class="line">Using rubypants (0.2.0)</span><br><span class="line">Using tilt (1.3.3)</span><br><span class="line">Using sinatra (1.3.5)</span><br><span class="line">Using stringex (1.4.0)</span><br><span class="line">Using bundler (1.3.5)</span><br><span class="line">Your bundle is complete!</span><br><span class="line">Use `bundle show [gemname]` to see <span class="built_in">where</span> a bundled gem is installed.</span><br><span class="line">/Applications/MAMP/htdocs/github/simonowendesign.github.com on master</span><br><span class="line">$ rake install</span><br><span class="line">A theme is already installed, proceeding will overwrite existing files. Are you sure? [y/n] n</span><br><span class="line">rake aborted!</span><br><span class="line">/Applications/MAMP/htdocs/github/simonowendesign.github.com on master</span><br><span class="line">$ rake update_<span class="built_in">source</span></span><br><span class="line">mkdir source.old</span><br><span class="line">cp -r <span class="built_in">source</span>/. source.old</span><br><span class="line"><span class="comment">## Copied source into source.old/</span></span><br><span class="line">cp -r --remove-destination .themes/classic/<span class="built_in">source</span>/. <span class="built_in">source</span></span><br><span class="line">cp -r --remove-destination source.old/_includes/custom/. <span class="built_in">source</span>/_includes/custom/</span><br><span class="line">cp source.old/favicon.png <span class="built_in">source</span></span><br><span class="line"><span class="comment">## Updated source ##</span></span><br><span class="line">/Applications/MAMP/htdocs/github/simonowendesign.github.com on master*</span><br></pre></td></tr></table></figure>
+<h3 id="Question-5"><a href="#Question-5" class="headerlink" title="Question 5"></a>Question 5</h3><p><strong>What’s the best practice for keeping on top of gems? e.g. should I be aware of new gems being updated and update as required, or perhaps have this automated, so if something is updated it happens on a daily basis?</strong></p>
+<p>After updating, I ran:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rake deploy</span><br></pre></td></tr></table></figure>
+<p>This seemed to fix the issue, but I have no idea if it was this that kicked it back into action. Whilst running those commands from <a href="http://octopress.org/docs/deploying/github/" target="_blank" rel="external">http://octopress.org/docs/deploying/github/</a> I noticed:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">'your-domain.com'</span> &gt;&gt; <span class="built_in">source</span>/CNAME</span><br></pre></td></tr></table></figure>
+<p>And also noticed that my <code>CNAME</code> file just had:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">simonowendesign.co.uk</span><br></pre></td></tr></table></figure>
+<p>So also at this point I did a commit that changed this, but then researching online found it was in fact correct to just have the domain name, so reverted and wonder also if maybe that fixed it. I also then noticed that I had more than one <code>CNAME</code> file and began to investigate all the files and folder structure again as I hadn’t done so for a while since setting it up and everything was working.</p>
+<p>Here’s my folder structure:</p>
+<p>Source:</p>
+<p><img src="/blog/2013-06-12/folder-path-01-source.png" alt="Oops"></p>
+<p>Blog:</p>
+<p><img src="/blog/2013-06-12/folder-path-02-blog.png" alt="Oops"></p>
+<p>Deploy:</p>
+<p><img src="/blog/2013-06-12/folder-path-03-deploy.png" alt="Oops"></p>
+<p>To add further confusion, as I knew I didn’t require the <code>source.old</code> I moved the <code>source.old</code> folder to another folder outside of the repo for safe keeping and did <code>git status</code> again. Then <code>git add .</code>, then <code>git status</code>, everything looked ok, so did <code>git commit -m &#39;Add video to post&#39;</code>. Then <code>git push origin source</code>, this again makes me wonder if I have this setup correct as I got:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin <span class="built_in">source</span></span><br><span class="line">error: src refspec <span class="built_in">source</span> does not match any.</span><br><span class="line">error: failed to push some refs to <span class="string">'git@github.com:simonowendesign/simonowendesign.github.com.git'</span></span><br></pre></td></tr></table></figure>
+<h3 id="Question-6"><a href="#Question-6" class="headerlink" title="Question 6"></a>Question 6</h3><p><strong>As I understand it <code>git push origin source</code> would push to a branch called <code>source</code>? Is this something I’m doing wrong, as I only have a <code>master</code> branch?</strong></p>
+<p>Then I opted to do just <code>git push</code> which gave me:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">To git@github.com:simonowendesign/simonowendesign.github.com.git</span><br><span class="line"> ! [rejected]        master -&gt; master (non-fast-forward)</span><br><span class="line">error: failed to push some refs to <span class="string">'git@github.com:simonowendesign/simonowendesign.github.com.git'</span></span><br><span class="line">hint: Updates were rejected because the tip of your current branch is behind</span><br><span class="line">hint: its remote counterpart. Merge the remote changes (e.g. <span class="string">'git pull'</span>)</span><br><span class="line">hint: before pushing again.</span><br><span class="line">hint: See the <span class="string">'Note about fast-forwards'</span> <span class="keyword">in</span> <span class="string">'git push --help'</span> <span class="keyword">for</span> details.</span><br></pre></td></tr></table></figure>
+<p>Next, I did a <code>git pull</code>, but I now get CONFLICT / auto-merging warnings on a load of files.</p>
+<p>Next, <code>git add .</code> again, then <code>git commit -m &#39;merge&#39;</code>, now try <code>git push</code> again, now it’s pushing all the files:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ git push</span><br><span class="line">Counting objects: 11876, done.</span><br><span class="line">Delta compression using up to 4 threads.</span><br><span class="line">Compressing objects: 100% (6941/6941), done.</span><br><span class="line">Writing objects: 100% (10438/10438), 1.84 MiB | 3.04 MiB/s, done.</span><br><span class="line">Total 10438 (delta 4382), reused 1447 (delta 265)</span><br><span class="line">To git@github.com:simonowendesign/simonowendesign.github.com.git</span><br><span class="line">   8a04cc7..7f14574  master -&gt; master</span><br></pre></td></tr></table></figure>
+<p>So head back over to Github:</p>
+<p><a href="http://github.com/simonowendesign/simonowendesign.github.io" target="_blank" rel="external">http://github.com/simonowendesign/simonowendesign.github.io</a></p>
+<p>Now I see all the folders and files and commit messages.</p>
+<p><img src="/blog/2013-06-12/github-commit-01-with.png" alt="Octopress Folder Paths"></p>
+<p>Where as sometimes I only see:</p>
+<p><img src="/blog/2013-06-12/github-commit-02-without.png" alt="Octopress Folder Paths"></p>
+<h3 id="Question-7"><a href="#Question-7" class="headerlink" title="Question 7"></a>Question 7</h3><p><strong>After reading over this post and looking over my setup I’m thinking most of these issues are related and that it has something to do with me pushing / deploying my <code>master</code> branch instead of a <code>source</code> branch perhaps?</strong></p>
+<p>Finally just to top things off, when I ever successfully (in my mind) update my site I get an email saying:</p>
+<p><img src="/blog/2013-06-12/github-page-build-failed.png" alt="GitHub Page Build Failed"></p>
+<p>Would greatly appreciate any help with this and hopefully it will help anyone else out who is having issues with Octopress.</p>
+<p>So far I love Octopress and have a feeling that it’s even more awesome but my noobness is getting in the way.</p>
+
+    
+  </div>
+  
+    <div class="twitter-share-link">
+  <a href="https://twitter.com/intent/tweet?url=http://s10wen.com/blog/2013/06/12/octopress-is-great-until-it-breaks/&amp;text=~@s10wen&amp;related=s10wen">
+    <p>Share or comment on this post via Twitter @s10wen</p>
+  </a>
+</div>
+
+    
+<nav id="article-nav">
+  
+    <a href="/blog/2013/06/07/rowtonhallhotel/" id="article-nav-older" class="article-nav-link-wrap">
+      <p class="article-nav-caption">older post</p>
+      <p class="article-nav-title">Rowton Hall Hotel</p>
+    </a>
+  
+  
+    <a href="/blog/2013/06/19/manchester-wordpress-user-group-june/" id="article-nav-newer" class="article-nav-link-wrap">
+      <p class="article-nav-caption">newer post</p>
+      <p class="article-nav-title">
+        
+          Manchester WordPress User Group June
+        
+      </p>
+    </a>
+  
+</nav>
+
+
+  
+</article>
+</section>
+  </div>
+  <footer id="footer">
+  <div id="footer-grad"></div>
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      © 2004-2016 <span class="split">/</span> Simon Owen <span class="split">/</span> <a href="http://twitter.com/s10wen">@s10wen</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

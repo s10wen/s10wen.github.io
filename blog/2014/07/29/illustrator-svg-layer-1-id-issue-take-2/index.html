@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <title>
+    Illustrator SVG Layer 1 id issue take 2 | Simon Owen | Front-End Developer
+  </title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="keywords" content="front-end developer,manchester,s10wen,simon owen,upfrontconf,mcrfred">
+  <meta name="description" content="Further to my post Illustrator SVG Id Issue and thanks to @aexmo I discovered that Illustrator adds in the id=&amp;quot;Layer_1&amp;quot; as it’s linked to the layer name. I’m not sure this is a great approac">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Illustrator SVG Layer 1 id issue take 2">
+<meta property="og:url" content="http://s10wen.com/blog/2014/07/29/illustrator-svg-layer-1-id-issue-take-2/index.html">
+<meta property="og:site_name" content="Simon Owen">
+<meta property="og:description" content="Further to my post Illustrator SVG Id Issue and thanks to @aexmo I discovered that Illustrator adds in the id=&amp;quot;Layer_1&amp;quot; as it’s linked to the layer name. I’m not sure this is a great approac">
+<meta property="og:image" content="http://s10wen.com/blog/2014-07-29/illustrator-layer-1.png">
+<meta property="og:image" content="http://s10wen.com/blog/2014-07-29/illustrator-svg-options.png">
+<meta property="og:updated_time" content="2016-03-03T20:20:16.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Illustrator SVG Layer 1 id issue take 2">
+<meta name="twitter:description" content="Further to my post Illustrator SVG Id Issue and thanks to @aexmo I discovered that Illustrator adds in the id=&amp;quot;Layer_1&amp;quot; as it’s linked to the layer name. I’m not sure this is a great approac">
+<meta name="twitter:image" content="http://s10wen.com/blog/2014-07-29/illustrator-layer-1.png">
+<meta name="twitter:creator" content="@s10wen">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-9016310-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+
+  <!--[if lt IE 10]>
+    <style>
+      #header-grad {
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', endColorstr='#8c00ff',GradientType=1 ); /* IE6-9 */
+      }
+    </style>
+  <![endif]-->
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <style>
+      .outer {
+        max-width: 672px;
+      }
+    </style>
+  <![endif]-->
+
+  <!-- Google Analytics because other methods didn't work, sigh -->
+  <meta name="google-site-verification" content="p53V9PXu9GYzN6QxFvWyDUTyNux_7k7G4sKxVk3YEnY">
+
+</head>
+
+<body>
+  <header id="header">
+  <div id="header-outer">
+    <div class="header-logo-wrap">
+      <a class="header-link" href="/">
+        
+            <span class="header-title">Simon Owen</span>
+            <span class="header-subtitle">Front-End Developer</span>
+        
+      </a>
+    </div>
+    <div class="main-nav-wrap">
+      <nav id="main-nav">
+        
+          <a class="main-nav-link" href="/">Blog</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/work">Work</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+      </nav>
+    </div>
+  </div>
+  <div id="mug"></div>
+  <div id="header-grad"></div>
+</header>
+
+  <div class="outer">
+    <section id="main"><article id="post-illustrator-svg-layer-1-id-issue-take-2" class="article article-type-post">
+
+  
+    <div class="article-meta">
+      <div class="article-time">
+  <span class="article-meta-title">posted on</span>
+  <a class="article-time-link" href="/blog/2014/07/29/illustrator-svg-layer-1-id-issue-take-2/">
+    <time datetime="2014-07-29T18:05:00.000Z">2014-07-29</time>
+  </a>
+</div>
+
+      
+  <div class="article-category">
+    <span class="article-meta-title">categories</span>
+    <a class="article-category-link" href="/blog/categories/svg/">svg</a>
+  </div>
+
+
+    </div>
+  
+
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title">
+      Illustrator SVG Layer 1 id issue take 2
+    </h1>
+  
+
+
+      </header>
+    
+    
+      <p>Further to my post <a href="/blog/2014/07/09/illustrator-svg-id-issue/">Illustrator SVG Id Issue</a> and thanks to <a href="http://twitter.com/aexmo" target="_blank" rel="external">@aexmo</a> I discovered that Illustrator adds in the <code>id=&quot;Layer_1&quot;</code> as it’s linked to the layer name. I’m not sure this is a great approach and have some thoughts.</p>
+<a id="more"></a>
+<p>First off thanks to <a href="http://twitter.com/aexmo" target="_blank" rel="external">@aexmo</a> for the reply:</p>
+<p><blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/s10wen" target="_blank" rel="external">@s10wen</a> yup thats intentional. the id is linked to layer name. so if you have multiple svgs on an artboard, just set layer name for each</p>&mdash; Alex Morris (@aexmo) <a href="https://twitter.com/aexmo/statuses/487618332208930817" target="_blank" rel="external">July 11, 2014</a></blockquote></p>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p><img src="/blog/2014-07-29/illustrator-layer-1.png" alt="Illustrator Layer 1"></p>
+<p>Since finding this out, I wondered how many people optimised their SVGs, or might have encountered the same issue, so I did a quick search on GitHub.</p>
+<p><a href="https://github.com/search?q=%3Csvg+version%3D%221.1%22+id%3D%22Layer_1%22+xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22+xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22&amp;type=Code&amp;ref=searchresults" target="_blank" rel="external">https://github.com/search?q=%3Csvg+version%3D%221.1%22+id%3D%22Layer_1%22+xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22+xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22&amp;type=Code&amp;ref=searchresults</a></p>
+<p>I actually ended up getting some mixed results doing this hitting search a few times (possibly related to <a href="https://developer.github.com/changes/2014-04-07-understanding-search-results-and-potential-timeouts/" target="_blank" rel="external">https://developer.github.com/changes/2014-04-07-understanding-search-results-and-potential-timeouts/</a>), but there’s no denying that I’m not alone.</p>
+<p>It’s also currently in WordPress <a href="https://github.com/WordPress/WordPress/search?q=Layer_1&amp;ref=cmdform" target="_blank" rel="external">https://github.com/WordPress/WordPress/search?q=Layer_1&amp;ref=cmdform</a>.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; version=&quot;1.1&quot; id=&quot;Layer_1&quot; x=&quot;0px&quot; y=&quot;0px&quot; width=&quot;64px&quot; height=&quot;64px&quot; viewBox=&quot;0 0 64 64&quot; enable-background=&quot;new 0 0 64 64&quot; xml:space=&quot;preserve&quot;&gt;&lt;style&gt;.style0&#123;fill:    #0074A2;&#125;&lt;/style&gt;&lt;g&gt;&lt;g&gt;&lt;path d=&quot;M4.548 31.999c0 10.9 6.3 20.3 15.5 24.706L6.925 20.827C5.402 24.2 4.5 28 4.5 31.999z M50.531 30.614c0-3.394-1.219-5.742-2.264-7.57c-1.391-2.263-2.695-4.177-2.695-6.439c0-2.523 1.912-4.872 4.609-4.872 c0.121 0 0.2 0 0.4 0.022C45.653 7.3 39.1 4.5 32 4.548c-9.591 0-18.027 4.921-22.936 12.4 c0.645 0 1.3 0 1.8 0.033c2.871 0 7.316-0.349 7.316-0.349c1.479-0.086 1.7 2.1 0.2 2.3 c0 0-1.487 0.174-3.142 0.261l9.997 29.735l6.008-18.017l-4.276-11.718c-1.479-0.087-2.879-0.261-2.879-0.261 c-1.48-0.087-1.306-2.349 0.174-2.262c0 0 4.5 0.3 7.2 0.349c2.87 0 7.317-0.349 7.317-0.349 c1.479-0.086 1.7 2.1 0.2 2.262c0 0-1.489 0.174-3.142 0.261l9.92 29.508l2.739-9.148 C49.628 35.7 50.5 33 50.5 30.614z M32.481 34.4l-8.237 23.934c2.46 0.7 5.1 1.1 7.8 1.1 c3.197 0 6.262-0.552 9.116-1.556c-0.072-0.118-0.141-0.243-0.196-0.379L32.481 34.4z M56.088 18.8 c0.119 0.9 0.2 1.8 0.2 2.823c0 2.785-0.521 5.916-2.088 9.832l-8.385 24.242c8.161-4.758 13.65-13.6 13.65-23.728 C59.451 27.2 58.2 22.7 56.1 18.83z M32 0c-17.645 0-32 14.355-32 32C0 49.6 14.4 64 32 64s32-14.355 32-32.001 C64 14.4 49.6 0 32 0z M32 62.533c-16.835 0-30.533-13.698-30.533-30.534C1.467 15.2 15.2 1.5 32 1.5 s30.534 13.7 30.5 30.532C62.533 48.8 48.8 62.5 32 62.533z&quot; class=&quot;style0&quot;/&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;</span><br></pre></td></tr></table></figure>
+<p>I’ve played about with various settings in Illustrator, but it seems that all variations will add <code>id=&quot;Layer_1&quot;</code> even if it’s not being used.</p>
+<p><img src="/blog/2014-07-29/illustrator-svg-options.png" alt="Illustrator SVG Options"></p>
+<p>A drawback of Illustrator doing this, means that if you save out multiple SVGs and they then all contain <code>id=&quot;Layer_1&quot;</code> now you’re dealing with multiple ids, which isn’t good and it’s possible that other SVGs will inherit the wrong styles.</p>
+<p>I can understand that in some scenarios a unique id might be required, but I think it would be helpful if Illustrator gave you a heads up. Perhaps if saving out an SVG and the layer name is the default <code>id=&quot;Layer_1&quot;</code> there should be an include in the SVG options to disable it if it’s not in use? maybe I’m missing something? interested to know your thoughts, please comment below.</p>
+
+    
+  </div>
+  
+    <div class="twitter-share-link">
+  <a href="https://twitter.com/intent/tweet?url=http://s10wen.com/blog/2014/07/29/illustrator-svg-layer-1-id-issue-take-2/&amp;text=~@s10wen&amp;related=s10wen">
+    <p>Share or comment on this post via Twitter @s10wen</p>
+  </a>
+</div>
+
+    
+<nav id="article-nav">
+  
+    <a href="/blog/2014/07/24/creating-music-with-clojure-and-overtone-with-chris-ford/" id="article-nav-older" class="article-nav-link-wrap">
+      <p class="article-nav-caption">older post</p>
+      <p class="article-nav-title">Creating music with Clojure and Overtone with Chris Ford</p>
+    </a>
+  
+  
+    <a href="/blog/2014/08/03/mcrfred-17-bruce-lawson/" id="article-nav-newer" class="article-nav-link-wrap">
+      <p class="article-nav-caption">newer post</p>
+      <p class="article-nav-title">
+        
+          McrFRED 17 Bruce Lawson
+        
+      </p>
+    </a>
+  
+</nav>
+
+
+  
+</article>
+</section>
+  </div>
+  <footer id="footer">
+  <div id="footer-grad"></div>
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      © 2004-2016 <span class="split">/</span> Simon Owen <span class="split">/</span> <a href="http://twitter.com/s10wen">@s10wen</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

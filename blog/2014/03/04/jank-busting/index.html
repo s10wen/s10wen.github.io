@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <title>
+    Jank Busting | Simon Owen | Front-End Developer
+  </title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="keywords" content="front-end developer,manchester,s10wen,simon owen,upfrontconf,mcrfred">
+  <meta name="description" content="I just spotted this rather awesome post from @aerotwist http://aerotwist.com/blog/my-performance-audit-workflow/.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Jank Busting">
+<meta property="og:url" content="http://s10wen.com/blog/2014/03/04/jank-busting/index.html">
+<meta property="og:site_name" content="Simon Owen">
+<meta property="og:description" content="I just spotted this rather awesome post from @aerotwist http://aerotwist.com/blog/my-performance-audit-workflow/.">
+<meta property="og:image" content="http://s10wen.com/blog/2014-03-04/timeline.png">
+<meta property="og:updated_time" content="2016-04-20T06:42:32.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Jank Busting">
+<meta name="twitter:description" content="I just spotted this rather awesome post from @aerotwist http://aerotwist.com/blog/my-performance-audit-workflow/.">
+<meta name="twitter:image" content="http://s10wen.com/blog/2014-03-04/timeline.png">
+<meta name="twitter:creator" content="@s10wen">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-9016310-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+
+  <!--[if lt IE 10]>
+    <style>
+      #header-grad {
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', endColorstr='#8c00ff',GradientType=1 ); /* IE6-9 */
+      }
+    </style>
+  <![endif]-->
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <style>
+      .outer {
+        max-width: 672px;
+      }
+    </style>
+  <![endif]-->
+
+  <!-- Google Analytics because other methods didn't work, sigh -->
+  <meta name="google-site-verification" content="p53V9PXu9GYzN6QxFvWyDUTyNux_7k7G4sKxVk3YEnY">
+
+</head>
+
+<body>
+  <header id="header">
+  <div id="header-outer">
+    <div class="header-logo-wrap">
+      <a class="header-link" href="/">
+        
+            <span class="header-title">Simon Owen</span>
+            <span class="header-subtitle">Front-End Developer</span>
+        
+      </a>
+    </div>
+    <div class="main-nav-wrap">
+      <nav id="main-nav">
+        
+          <a class="main-nav-link" href="/">Blog</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/work">Work</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+      </nav>
+    </div>
+  </div>
+  <div id="mug"></div>
+  <div id="header-grad"></div>
+</header>
+
+  <div class="outer">
+    <section id="main"><article id="post-jank-busting" class="article article-type-post">
+
+  
+    <div class="article-meta">
+      <div class="article-time">
+  <span class="article-meta-title">posted on</span>
+  <a class="article-time-link" href="/blog/2014/03/04/jank-busting/">
+    <time datetime="2014-03-04T08:20:00.000Z">2014-03-04</time>
+  </a>
+</div>
+
+      
+  <div class="article-category">
+    <span class="article-meta-title">categories</span>
+    <a class="article-category-link" href="/blog/categories/jank/">jank</a>
+  </div>
+
+
+    </div>
+  
+
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title">
+      Jank Busting
+    </h1>
+  
+
+
+      </header>
+    
+    
+      <p>I just spotted this rather awesome post from <a href="http://twitter.com/aerotwist" target="_blank" rel="external">@aerotwist</a> <a href="http://aerotwist.com/blog/my-performance-audit-workflow/" target="_blank" rel="external">http://aerotwist.com/blog/my-performance-audit-workflow/</a>.</p>
+<a id="more"></a>
+<p>I’d previously sent Paul an email, so thanks Paul if you saw it and the post was partly in reply to my email.</p>
+<p>It’s nice to see I follow a fairly similar approach.</p>
+<p>Further into the post Paul mentions ‘Runtime Performance’ and highlights ‘in a nutshell what he’s on the hunt for’:</p>
+<ul>
+<li>Large invalidations of element styles (recalculate styles) and geometry (layout).</li>
+<li>Repeated layout and style changes inside a single frame aka Layout Thrashing.</li>
+<li>Animation of layout properties.</li>
+<li>Large paint areas aka Paint Storms.</li>
+<li>Expensive painting.</li>
+<li>Badly written touch and scroll handlers.</li>
+<li>Memory churn.</li>
+</ul>
+<p>As well as a link that had previously passed me by:</p>
+<p><a href="http://calendar.perfplanet.com/2013/the-runtime-performance-checklist/" target="_blank" rel="external">http://calendar.perfplanet.com/2013/the-runtime-performance-checklist/</a></p>
+<p><img src="/blog/2014-03-04/timeline.png" alt="Chrome Dev Tools Timelime"></p>
+<p>I’m particularly impressed with Chome’s timeline <a href="https://developers.google.com/chrome-developer-tools/docs/timeline" target="_blank" rel="external">https://developers.google.com/chrome-developer-tools/docs/timeline</a> and find it highly rewarding, especially on mobile / tablet devices pushing for that gloriously smooth 60fps.</p>
+<p>What I’m finding frustrating at the minute is I can see spikes and where there’s room for improvement but I struggle to narrow down and find out what’s causing the issue and how to rectify it.</p>
+<p>There’s some great resources on the web, here’s a few:</p>
+<ul>
+<li><a href="http://jankfree.org/" target="_blank" rel="external">http://jankfree.org/</a></li>
+<li><a href="https://developers.google.com/events/io/sessions/325933151" target="_blank" rel="external">https://developers.google.com/events/io/sessions/325933151</a></li>
+<li><a href="http://addyosmani.com/blog/jank-busting-with-daft-punk/" target="_blank" rel="external">http://addyosmani.com/blog/jank-busting-with-daft-punk/</a></li>
+<li><a href="http://code.flickr.net/2013/06/04/adventures-in-jank-busting-parallax-performance-and-the-new-flickr-home-page/" target="_blank" rel="external">http://code.flickr.net/2013/06/04/adventures-in-jank-busting-parallax-performance-and-the-new-flickr-home-page/</a></li>
+<li><a href="http://www.paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/" target="_blank" rel="external">http://www.paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/</a></li>
+<li><a href="http://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/" target="_blank" rel="external">http://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/</a></li>
+<li><a href="https://www.youtube.com/watch?v=h2djIdAFc5U" target="_blank" rel="external">https://www.youtube.com/watch?v=h2djIdAFc5U</a></li>
+</ul>
+<p>What I’d love to see are more posts / screencasts showing specific examples and how to improve them. I particularly like screencasts as I often learn handy shortcuts / workflow tricks along the way as an added bonus.</p>
+<p>If you haven’t seen it already, here’s a video of Paul Irish and Paul Lewis doing exactly this. It’s awesome. Enjoy.</p>
+<div class="iframe-wrap"><br>  <iframe src="//youtube.com/embed/z0_jD8nO5Zw" frameborder="0" allowfullscreen></iframe><br></div>
+
+    
+  </div>
+  
+    <div class="twitter-share-link">
+  <a href="https://twitter.com/intent/tweet?url=http://s10wen.com/blog/2014/03/04/jank-busting/&amp;text=~@s10wen&amp;related=s10wen">
+    <p>Share or comment on this post via Twitter @s10wen</p>
+  </a>
+</div>
+
+    
+<nav id="article-nav">
+  
+    <a href="/blog/2014/03/01/should-dev-tool-themes-be-light-or-dark/" id="article-nav-older" class="article-nav-link-wrap">
+      <p class="article-nav-caption">older post</p>
+      <p class="article-nav-title">Should dev tool themes be light or dark?</p>
+    </a>
+  
+  
+    <a href="/blog/2014/03/04/gitbox-not-working/" id="article-nav-newer" class="article-nav-link-wrap">
+      <p class="article-nav-caption">newer post</p>
+      <p class="article-nav-title">
+        
+          Gitbox Not Working
+        
+      </p>
+    </a>
+  
+</nav>
+
+
+  
+</article>
+</section>
+  </div>
+  <footer id="footer">
+  <div id="footer-grad"></div>
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      © 2004-2016 <span class="split">/</span> Simon Owen <span class="split">/</span> <a href="http://twitter.com/s10wen">@s10wen</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

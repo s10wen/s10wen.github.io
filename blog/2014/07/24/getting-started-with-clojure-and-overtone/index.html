@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <title>
+    Getting started with Clojure and Overtone | Simon Owen | Front-End Developer
+  </title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="keywords" content="front-end developer,manchester,s10wen,simon owen,upfrontconf,mcrfred">
+  <meta name="description" content="Continuing on from my previous post. I had a few issues getting up and running on my mac so thought I’d put a quick blog post up in case it helps anyone.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Getting started with Clojure and Overtone">
+<meta property="og:url" content="http://s10wen.com/blog/2014/07/24/getting-started-with-clojure-and-overtone/index.html">
+<meta property="og:site_name" content="Simon Owen">
+<meta property="og:description" content="Continuing on from my previous post. I had a few issues getting up and running on my mac so thought I’d put a quick blog post up in case it helps anyone.">
+<meta property="og:updated_time" content="2016-03-03T20:20:16.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Getting started with Clojure and Overtone">
+<meta name="twitter:description" content="Continuing on from my previous post. I had a few issues getting up and running on my mac so thought I’d put a quick blog post up in case it helps anyone.">
+<meta name="twitter:creator" content="@s10wen">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-9016310-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+
+  <!--[if lt IE 10]>
+    <style>
+      #header-grad {
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', endColorstr='#8c00ff',GradientType=1 ); /* IE6-9 */
+      }
+    </style>
+  <![endif]-->
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <style>
+      .outer {
+        max-width: 672px;
+      }
+    </style>
+  <![endif]-->
+
+  <!-- Google Analytics because other methods didn't work, sigh -->
+  <meta name="google-site-verification" content="p53V9PXu9GYzN6QxFvWyDUTyNux_7k7G4sKxVk3YEnY">
+
+</head>
+
+<body>
+  <header id="header">
+  <div id="header-outer">
+    <div class="header-logo-wrap">
+      <a class="header-link" href="/">
+        
+            <span class="header-title">Simon Owen</span>
+            <span class="header-subtitle">Front-End Developer</span>
+        
+      </a>
+    </div>
+    <div class="main-nav-wrap">
+      <nav id="main-nav">
+        
+          <a class="main-nav-link" href="/">Blog</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/work">Work</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+      </nav>
+    </div>
+  </div>
+  <div id="mug"></div>
+  <div id="header-grad"></div>
+</header>
+
+  <div class="outer">
+    <section id="main"><article id="post-getting-started-with-clojure-and-overtone" class="article article-type-post">
+
+  
+    <div class="article-meta">
+      <div class="article-time">
+  <span class="article-meta-title">posted on</span>
+  <a class="article-time-link" href="/blog/2014/07/24/getting-started-with-clojure-and-overtone/">
+    <time datetime="2014-07-24T17:43:00.000Z">2014-07-24</time>
+  </a>
+</div>
+
+      
+  <div class="article-category">
+    <span class="article-meta-title">categories</span>
+    <a class="article-category-link" href="/blog/categories/clojure-overtone/">clojure overtone</a>
+  </div>
+
+
+    </div>
+  
+
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title">
+      Getting started with Clojure and Overtone
+    </h1>
+  
+
+
+      </header>
+    
+    
+      <p>Continuing on from my <a href="/blog/2014/07/24/creating-music-with-clojure-and-overtone-with-chris-ford/">previous post</a>. I had a few issues getting up and running on my mac so thought I’d put a quick blog post up in case it helps anyone.</p>
+<a id="more"></a>
+<p>First I headed over to: <a href="https://github.com/overtone/overtone" target="_blank" rel="external">https://github.com/overtone/overtone</a></p>
+<p>And read this:</p>
+<ol>
+<li>Make sure you have a Java JDK version 6 or later.</li>
+<li>Download the lein script from the stable branch of this project.</li>
+<li>Place it on your $PATH. (~/bin is a good choice if it is on your path.)</li>
+<li>Set it to be executable. (chmod 755 ~/bin/lein)</li>
+<li>Run it.</li>
+</ol>
+<p>Here’s a bit more detail:</p>
+<p>1) First off I tried in the command line <code>java -version</code> but this isn’t what you’re after. You need the actual JDK, I’m not sure how to check if you have this installed, but I was pretty sure I didn’t so went to google and typed <code>Java JDK download</code> and got to: <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="external">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a></p>
+<p>2) To download this, <a href="https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein" target="_blank" rel="external">open the link</a> in a new tab, copy the contents and save this to a file called <code>lein</code> on your local machine.</p>
+<p>3) I’m not sure if this is the correct way to do this, but it worked for me. I moved the file <code>lein</code> created in the previous step to the bin folder in the root folder of my machine, a handy shortcut is to open the Finder, then <code>Shift+Cmd+G</code> then can paste in <code>~/bin</code> to get to that folder.</p>
+<p>4) In Terminal (or I use iTerm, whatever you use for writing commands on the command line) paste in <code>chmod 755 ~/bin/lein</code> and hit enter so it runs. This will change the permissions of the file.</p>
+<p>5) To run it, in Terminal do <code>bash lein</code> and again hit enter so that commands runs.</p>
+<p>I then then did <code>lein new insane-noises</code>, <code>cd insane-noises</code>, <code>lein repl</code>, but got:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">༼ つ ◕_◕ ༽つ⚡  lein repl</span><br><span class="line">nREPL server started on port 49492 on host 127.0.0.1 - nrepl://127.0.0.1:49492</span><br><span class="line">REPL-y 0.3.1</span><br><span class="line">Clojure 1.6.0</span><br><span class="line">    Docs: (doc function-name-here)</span><br><span class="line">          (find-doc &quot;part-of-name-here&quot;)</span><br><span class="line">  Source: (source function-name-here)</span><br><span class="line"> Javadoc: (javadoc java-object-or-class-here)</span><br><span class="line">    Exit: Control+D or (exit) or (quit)</span><br><span class="line"> Results: Stored in vars *1, *2, *3, an exception in *e</span><br><span class="line"></span><br><span class="line">user=&gt;</span><br></pre></td></tr></table></figure>
+<p>For some reason not all the dependencies are included in the <code>insane-noises/project.clj</code> file, to fix this I had to add in the  dependencies manually, so changed the <code>project.clj</code> file from:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">(defproject insane-noises &quot;0.1.0-SNAPSHOT&quot;</span><br><span class="line">  :description &quot;FIXME: write description&quot;</span><br><span class="line">  :url &quot;http://example.com/FIXME&quot;</span><br><span class="line">  :license &#123;:name &quot;Eclipse Public License&quot;</span><br><span class="line">            :url &quot;http://www.eclipse.org/legal/epl-v10.html&quot;&#125;</span><br><span class="line">  :dependencies [[org.clojure/clojure &quot;1.6.0&quot;]])</span><br></pre></td></tr></table></figure>
+<p>to:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">(defproject insane-noises &quot;0.1.0-SNAPSHOT&quot;</span><br><span class="line">  :description &quot;FIXME: write description&quot;</span><br><span class="line">  :url &quot;http://example.com/FIXME&quot;</span><br><span class="line">  :license &#123;:name &quot;Eclipse Public License&quot;</span><br><span class="line">            :url &quot;http://www.eclipse.org/legal/epl-v10.html&quot;&#125;</span><br><span class="line">  :dependencies [[org.clojure/clojure &quot;1.6.0&quot;][org.clojure/clojure &quot;1.5.1&quot;][overtone &quot;0.9.1&quot;]])</span><br></pre></td></tr></table></figure>
+<p>saved the file, then when I ran <code>lein repl</code> the dependencies got downloaded and… woohooo!!!!! boom I’m in :)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">--&gt; Loading Overtone...</span><br><span class="line"></span><br><span class="line">    _____                 __</span><br><span class="line">   / __  /_  _____  _____/ /_____  ____  ___</span><br><span class="line">  / / / / | / / _ \/ ___/ __/ __ \/ __ \/ _ \</span><br><span class="line"> / /_/ /| |/ /  __/ /  / /_/ /_/ / / / /  __/</span><br><span class="line"> \____/ |___/\___/_/   \__/\____/_/ /_/\___/</span><br></pre></td></tr></table></figure>
+<p>After this I was also able to clone Chris’s repo: <a href="https://github.com/ctford/whelmed" target="_blank" rel="external">https://github.com/ctford/whelmed</a></p>
+<p>I use some custom aliases to do this: <code>g c git@github.com:ctford/whelmed.git</code> which is basically <code>git clone git@github.com:ctford/whelmed.git</code> after that <code>cd whelmed</code>, <code>lein run</code> and now I get:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">༼ つ ◕_◕ ༽つ⚡  lein run</span><br><span class="line">--&gt; Loading Overtone...</span><br><span class="line">--&gt; Booting internal SuperCollider server...</span><br><span class="line">*** ERROR: open directory failed &apos;/Users/simonowen/Library/Application Support/SuperCollider/synthdefs&apos;</span><br><span class="line">Number of Devices: 2</span><br><span class="line">   0 : &quot;Built-in Microph&quot;</span><br><span class="line">   1 : &quot;Built-in Output&quot;</span><br><span class="line"></span><br><span class="line">&quot;Built-in Microph&quot; Input Device</span><br><span class="line">   Streams: 1</span><br><span class="line">      0  channels 2</span><br><span class="line"></span><br><span class="line">&quot;Built-in Output&quot; Output Device</span><br><span class="line">   Streams: 1</span><br><span class="line">      0  channels 2</span><br><span class="line"></span><br><span class="line">SC_AudioDriver: sample rate = 44100.000000, driver&apos;s block size = 512</span><br><span class="line">--&gt; Connecting to internal SuperCollider server...</span><br><span class="line">--&gt; Connection established</span><br><span class="line"></span><br><span class="line">    _____                 __</span><br><span class="line">   / __  /_  _____  _____/ /_____  ____  ___</span><br><span class="line">  / / / / | / / _ \/ ___/ __/ __ \/ __ \/ _ \</span><br><span class="line"> / /_/ /| |/ /  __/ /  / /_/ /_/ / / / /  __/</span><br><span class="line"> \____/ |___/\___/_/   \__/\____/_/ /_/\___/</span><br><span class="line"></span><br><span class="line">   Collaborative Programmable Music. v0.8</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Hello Simonowen, may algorithmic beauty pour forth from your fingertips today.</span><br><span class="line"></span><br><span class="line">late 0.026350804</span><br><span class="line">late 0.026350804</span><br></pre></td></tr></table></figure>
+<p>and this is now playing Chris’s song, lovely stuff, especially like the <code>shudder</code> sound.</p>
+<p>I just need to try and find out what’s going on with the <code>*** ERROR: open directory failed &#39;/Users/simonowen/Library/Application Support/SuperCollider/synthdefs&#39;</code> error now and I’m set.</p>
+<p>Nice chatting to Chris afterwards, thanks again!</p>
+
+    
+  </div>
+  
+    <div class="twitter-share-link">
+  <a href="https://twitter.com/intent/tweet?url=http://s10wen.com/blog/2014/07/24/getting-started-with-clojure-and-overtone/&amp;text=~@s10wen&amp;related=s10wen">
+    <p>Share or comment on this post via Twitter @s10wen</p>
+  </a>
+</div>
+
+    
+<nav id="article-nav">
+  
+    <a href="/blog/2014/07/22/output-ls-contents-of-a-server-directory-using-bash/" id="article-nav-older" class="article-nav-link-wrap">
+      <p class="article-nav-caption">older post</p>
+      <p class="article-nav-title">Output ls contents of a server directory using bash</p>
+    </a>
+  
+  
+    <a href="/blog/2014/07/24/creating-music-with-clojure-and-overtone-with-chris-ford/" id="article-nav-newer" class="article-nav-link-wrap">
+      <p class="article-nav-caption">newer post</p>
+      <p class="article-nav-title">
+        
+          Creating music with Clojure and Overtone with Chris Ford
+        
+      </p>
+    </a>
+  
+</nav>
+
+
+  
+</article>
+</section>
+  </div>
+  <footer id="footer">
+  <div id="footer-grad"></div>
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      © 2004-2016 <span class="split">/</span> Simon Owen <span class="split">/</span> <a href="http://twitter.com/s10wen">@s10wen</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <title>
+    Adding emoticons to Octopress | Simon Owen | Front-End Developer
+  </title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="keywords" content="front-end developer,manchester,s10wen,simon owen,upfrontconf,mcrfred">
+  <meta name="description" content="If you’re using Octopress, chances are you’re familiar with the emoticons used in GitHub.
+It’s possible to make use of these in an Octopress blog as well.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Adding emoticons to Octopress">
+<meta property="og:url" content="http://s10wen.com/blog/2013/03/23/adding-emoticons-to-octopress/index.html">
+<meta property="og:site_name" content="Simon Owen">
+<meta property="og:description" content="If you’re using Octopress, chances are you’re familiar with the emoticons used in GitHub.
+It’s possible to make use of these in an Octopress blog as well.">
+<meta property="og:updated_time" content="2016-03-03T20:20:16.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Adding emoticons to Octopress">
+<meta name="twitter:description" content="If you’re using Octopress, chances are you’re familiar with the emoticons used in GitHub.
+It’s possible to make use of these in an Octopress blog as well.">
+<meta name="twitter:creator" content="@s10wen">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-9016310-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+
+  <!--[if lt IE 10]>
+    <style>
+      #header-grad {
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', endColorstr='#8c00ff',GradientType=1 ); /* IE6-9 */
+      }
+    </style>
+  <![endif]-->
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <style>
+      .outer {
+        max-width: 672px;
+      }
+    </style>
+  <![endif]-->
+
+  <!-- Google Analytics because other methods didn't work, sigh -->
+  <meta name="google-site-verification" content="p53V9PXu9GYzN6QxFvWyDUTyNux_7k7G4sKxVk3YEnY">
+
+</head>
+
+<body>
+  <header id="header">
+  <div id="header-outer">
+    <div class="header-logo-wrap">
+      <a class="header-link" href="/">
+        
+            <span class="header-title">Simon Owen</span>
+            <span class="header-subtitle">Front-End Developer</span>
+        
+      </a>
+    </div>
+    <div class="main-nav-wrap">
+      <nav id="main-nav">
+        
+          <a class="main-nav-link" href="/">Blog</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/work">Work</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+      </nav>
+    </div>
+  </div>
+  <div id="mug"></div>
+  <div id="header-grad"></div>
+</header>
+
+  <div class="outer">
+    <section id="main"><article id="post-adding-emoticons-to-octopress" class="article article-type-post">
+
+  
+    <div class="article-meta">
+      <div class="article-time">
+  <span class="article-meta-title">posted on</span>
+  <a class="article-time-link" href="/blog/2013/03/23/adding-emoticons-to-octopress/">
+    <time datetime="2013-03-23T12:19:00.000Z">2013-03-23</time>
+  </a>
+</div>
+
+      
+  <div class="article-category">
+    <span class="article-meta-title">categories</span>
+    <a class="article-category-link" href="/blog/categories/octopress/">octopress</a>
+  </div>
+
+
+    </div>
+  
+
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title">
+      Adding emoticons to Octopress
+    </h1>
+  
+
+
+      </header>
+    
+    
+      <p>If you’re using Octopress, chances are you’re familiar with the emoticons used in GitHub.</p>
+<p>It’s possible to make use of these in an Octopress blog as well.</p>
+<a id="more"></a>
+<p>Here’s how I managed it from:<br><a href="https://github.com/chriskempson/jekyll-emoji" target="_blank" rel="external">https://github.com/chriskempson/jekyll-emoji</a></p>
+<p>Added <code>gem &#39;gemoji&#39;</code> to <code>Gemfile</code>.</p>
+<p>In Terminal ran <code>bundle install</code>.</p>
+<p>Added the emoji folder to <code>source/images/emoji</code> and <code>/images/emoji</code>.</p>
+<p>Added <code>emoji_dir: images/emoji</code> to <code>_config.yml</code>.</p>
+<p>(Please note there shouldn’t be spaces between the <code>{</code> Octopress decided not to display the code if they were together.)</p>
+<p>Changed <code>{ { content } }</code> to <code>{ { content | emojify } }</code> in the <code>article.html</code> and <code>page.html</code>, you also do the same for anywhere else you’d like to appear and string <code>emojify</code> e.g. <code>{ { content | excerpt | emojify } }</code>. (Again please ignore the spaces between the <code>{</code>.)</p>
+<p>Also added the following in _styles.scss:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// Reset image styles for Emoji</span><br><span class="line">.emoji &#123;</span><br><span class="line">  box-shadow: none;</span><br><span class="line">  border: 0;</span><br><span class="line">  height: 20px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Then added emoticons into posts.</p>
+<p>There’s a full list here:<br><a href="http://www.emoji-cheat-sheet.com/" target="_blank" rel="external">http://www.emoji-cheat-sheet.com/</a></p>
+<p>The default size of the images are 64x64 so finally going to run a Photoshop batch script to change the size to 20x20 to save a bit on filesize.</p>
+<p>Thanks to <a href="https://github.com/chriskempson" target="_blank" rel="external">https://github.com/chriskempson</a> for helping me out with this.</p>
+<p>:bowtie:<br>:smile:<br>:laughing:<br>:blush:<br>:smiley:<br>:relaxed:<br>:smirk:<br>:heart_eyes:<br>:kissing_heart:<br>:kissing_closed_eyes:<br>:flushed:<br>:relieved:<br>:satisfied:<br>:grin:<br>:wink:<br>:stuck_out_tongue_winking_eye:<br>:stuck_out_tongue_closed_eyes:<br>:grinning:<br>:kissing:<br>:kissing_smiling_eyes:<br>:stuck_out_tongue:<br>:sleeping:<br>:worried:<br>:frowning:<br>:anguished:<br>:open_mouth:<br>:grimacing:<br>:confused:<br>:hushed:<br>:expressionless:<br>:unamused:</p>
+
+    
+  </div>
+  
+    <div class="twitter-share-link">
+  <a href="https://twitter.com/intent/tweet?url=http://s10wen.com/blog/2013/03/23/adding-emoticons-to-octopress/&amp;text=~@s10wen&amp;related=s10wen">
+    <p>Share or comment on this post via Twitter @s10wen</p>
+  </a>
+</div>
+
+    
+<nav id="article-nav">
+  
+    <a href="/blog/2013/03/21/first-mcrfred/" id="article-nav-older" class="article-nav-link-wrap">
+      <p class="article-nav-caption">older post</p>
+      <p class="article-nav-title">First McrFRED</p>
+    </a>
+  
+  
+    <a href="/blog/2013/03/27/mcrfred-round-2/" id="article-nav-newer" class="article-nav-link-wrap">
+      <p class="article-nav-caption">newer post</p>
+      <p class="article-nav-title">
+        
+          McrFRED Round 2
+        
+      </p>
+    </a>
+  
+</nav>
+
+
+  
+</article>
+</section>
+  </div>
+  <footer id="footer">
+  <div id="footer-grad"></div>
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      © 2004-2016 <span class="split">/</span> Simon Owen <span class="split">/</span> <a href="http://twitter.com/s10wen">@s10wen</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
