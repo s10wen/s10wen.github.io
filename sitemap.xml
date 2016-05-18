@@ -2,13 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://s10wen.com/blog/2016/05/18/japantalk/</loc>
-    <lastmod>2016-05-18T09:34:55.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://s10wen.com/blog/2016/05/18/japan-2016/</loc>
-    <lastmod>2016-05-18T09:33:47.000Z</lastmod>
+    <loc>http://s10wen.com/japan2016/japan2016.html</loc>
+    <lastmod>2016-05-18T09:39:09.000Z</lastmod>
   </url>
   
   <url>
@@ -182,23 +177,18 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/speaking/index.html</loc>
+    <loc>http://s10wen.com/mcrfred/coc/index.html</loc>
     <lastmod>2015-12-06T13:56:07.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://s10wen.com/mcrfred/coc/index.html</loc>
+    <loc>http://s10wen.com/speaking/index.html</loc>
     <lastmod>2015-12-06T13:56:07.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://s10wen.com/clients/index.html</loc>
     <lastmod>2015-12-06T13:56:07.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://s10wen.com/blog/2014/11/19/manchester-wordpress-user-group-november/</loc>
-    <lastmod>2015-12-06T13:56:06.000Z</lastmod>
   </url>
   
   <url>
@@ -497,12 +487,12 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2015/11/07/ffconf-2015/</loc>
+    <loc>http://s10wen.com/blog/2013/10/22/wallpapercentral/</loc>
     <lastmod>2015-12-06T13:56:06.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2013/10/16/manchester-wordpress-user-group-october/</loc>
+    <loc>http://s10wen.com/blog/2015/11/07/ffconf-2015/</loc>
     <lastmod>2015-12-06T13:56:06.000Z</lastmod>
   </url>
   
@@ -987,7 +977,12 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2013/10/22/wallpapercentral/</loc>
+    <loc>http://s10wen.com/blog/2014/11/19/manchester-wordpress-user-group-november/</loc>
+    <lastmod>2015-12-06T13:56:06.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://s10wen.com/blog/2013/10/16/manchester-wordpress-user-group-october/</loc>
     <lastmod>2015-12-06T13:56:06.000Z</lastmod>
   </url>
   
