@@ -131,7 +131,7 @@ ga('send', 'pageview');
 <a id="more"></a>
 <p>Today I had an issue, I wanted to write a script that would ssh into a server and save the <code>ls</code> from a certain path.</p>
 <p>If you’re not familiar with bash, <code>ls -al</code> will list everything in a vertical list like this:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ ls -al</span><br><span class="line"></span><br><span class="line">total 109</span><br><span class="line">drwxr-xr-x  18 root     root         4096 Jun  9 21:12 ./</span><br><span class="line">drwxr-xr-x  18 root     root         4096 Jun  9 21:12 ../</span><br><span class="line">drwxr-xr-x   2 root     root         4096 Jun  9 21:14 bin/</span><br><span class="line">drwxr-xr-x   3 root     root         1024 Jun  9 20:32 boot/</span><br><span class="line">drwxr-xr-x   6 root     root        36864 Jul 12 10:26 dev/</span><br><span class="line">drwxr-xr-x  34 root     root         4096 Jul 12 10:25 etc/</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">$ ls -al</div><div class="line"></div><div class="line">total 109</div><div class="line">drwxr-xr-x  18 root     root         4096 Jun  9 21:12 ./</div><div class="line">drwxr-xr-x  18 root     root         4096 Jun  9 21:12 ../</div><div class="line">drwxr-xr-x   2 root     root         4096 Jun  9 21:14 bin/</div><div class="line">drwxr-xr-x   3 root     root         1024 Jun  9 20:32 boot/</div><div class="line">drwxr-xr-x   6 root     root        36864 Jul 12 10:26 dev/</div><div class="line">drwxr-xr-x  34 root     root         4096 Jul 12 10:25 etc/</div></pre></td></tr></table></figure>
 <p>I thought about how I’d do this with my limited knowledge of bash and did some googling but didn’t get anywhere.</p>
 <p>I sent out a tweet and copied in a few people.</p>
 <p><blockquote class="twitter-tweet" lang="en"><p>Please help bash friends, copy <code>ls -al</code> from a server to local txt file <a href="https://t.co/R1w0Pe1m8P" target="_blank" rel="external">https://t.co/R1w0Pe1m8P</a> +<a href="https://twitter.com/sindresorhus" target="_blank" rel="external">@sindresorhus</a> <a href="https://twitter.com/mathias" target="_blank" rel="external">@mathias</a> <a href="https://twitter.com/csswizardry" target="_blank" rel="external">@csswizardry</a></p>&mdash; Simon Owen (@s10wen) <a href="https://twitter.com/s10wen/statuses/491557019766493184" target="_blank" rel="external">July 22, 2014</a></blockquote></p>
@@ -149,7 +149,7 @@ ga('send', 'pageview');
 
 <p>This is a shout out to everyone that is so freaking awesome (sorry Harry, I know I’m not American, but how I love the word :wink:) and willing to take time out of their day to help.</p>
 <p>With the information above I was able to put a little script together:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span><br><span class="line"></span></span><br><span class="line">ssh server1@wherever.com <span class="string">'ls -al /where/you/want/'</span> &gt; server1.txt</span><br><span class="line">ssh server2@wherever.com <span class="string">'ls -al /where/you/want/'</span> &gt; server2.txt</span><br><span class="line">ssh server3@wherever.com <span class="string">'ls -al /where/you/want/'</span> &gt; server3.txt</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#!/bin/bash</span></div><div class="line"></div><div class="line">ssh server1@wherever.com <span class="string">'ls -al /where/you/want/'</span> &gt; server1.txt</div><div class="line">ssh server2@wherever.com <span class="string">'ls -al /where/you/want/'</span> &gt; server2.txt</div><div class="line">ssh server3@wherever.com <span class="string">'ls -al /where/you/want/'</span> &gt; server3.txt</div></pre></td></tr></table></figure>
 <p>Now I have a directory locally called <code>server</code> that has a file in called <code>server.sh</code>, I can <code>cd</code> to it and run <code>bash server.sh</code> and I end up with the <code>ls -al</code> contents of the servers.</p>
 <p><a href="https://gist.github.com/s10wen/6cf00ab86b96e5d1fa9c" target="_blank" rel="external">https://gist.github.com/s10wen/6cf00ab86b96e5d1fa9c</a></p>
 <p>Niiiiiiiiiiiiiiiiiiice.</p>
@@ -172,11 +172,11 @@ ga('send', 'pageview');
     </a>
   
   
-    <a href="/blog/2014/07/24/getting-started-with-clojure-and-overtone/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/blog/2014/07/24/creating-music-with-clojure-and-overtone-with-chris-ford/" id="article-nav-newer" class="article-nav-link-wrap">
       <p class="article-nav-caption">newer post</p>
       <p class="article-nav-title">
         
-          Getting started with Clojure and Overtone
+          Creating music with Clojure and Overtone with Chris Ford
         
       </p>
     </a>

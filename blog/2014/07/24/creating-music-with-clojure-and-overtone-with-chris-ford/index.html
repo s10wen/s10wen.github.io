@@ -152,14 +152,14 @@ ga('send', 'pageview');
 <p>using vim as editor</p>
 <p>commands; play, bell, beep, stop, ding, midi-hz, let</p>
 <p>comments = ;</p>
-<h2 id="Example-code"><a href="#Example-code" class="headerlink" title="Example code"></a>Example code</h2><h3 id="Psycho-acoustics"><a href="#Psycho-acoustics" class="headerlink" title="Psycho-acoustics"></a>Psycho-acoustics</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(comment</span><br><span class="line">    (bell 600 10.0)</span><br><span class="line">    (bell 500 10.0 0.0)</span><br><span class="line">    (bell 400 10.0 0.0 0.0)</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<h2 id="Example-code"><a href="#Example-code" class="headerlink" title="Example code"></a>Example code</h2><h3 id="Psycho-acoustics"><a href="#Psycho-acoustics" class="headerlink" title="Psycho-acoustics"></a>Psycho-acoustics</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">(comment</div><div class="line">    (bell 600 10.0)</div><div class="line">    (bell 500 10.0 0.0)</div><div class="line">    (bell 400 10.0 0.0 0.0)</div><div class="line">)</div></pre></td></tr></table></figure>
 <p>In an octave the frequency is doubled:</p>
 <p><a href="http://www.angelfire.com/in2/yala/t4scales.htm" target="_blank" rel="external">http://www.angelfire.com/in2/yala/t4scales.htm</a></p>
-<h3 id="scale"><a href="#scale" class="headerlink" title="scale"></a>scale</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">(def major (scale [2 2 1 2 2 2 1]))</span><br><span class="line">(def minor (scale [2 1 2 2 1 2 2]))</span><br><span class="line">(def blues (scale [3 2 1 2 3 2]))</span><br><span class="line">(def pentatonic (scale [3 2 1 2 3 2]))</span><br><span class="line">(def blues (scale [3 2 1 2 3 2]))</span><br><span class="line"></span><br><span class="line">(comment</span><br><span class="line">    (even-melody</span><br><span class="line">        (map</span><br><span class="line">            (comp D sharp blues)</span><br><span class="line">            (concat (range 08) (reverse (range 0 7)</span><br><span class="line">        )</span><br><span class="line">    )</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<h3 id="scale"><a href="#scale" class="headerlink" title="scale"></a>scale</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">(def major (scale [2 2 1 2 2 2 1]))</div><div class="line">(def minor (scale [2 1 2 2 1 2 2]))</div><div class="line">(def blues (scale [3 2 1 2 3 2]))</div><div class="line">(def pentatonic (scale [3 2 1 2 3 2]))</div><div class="line">(def blues (scale [3 2 1 2 3 2]))</div><div class="line"></div><div class="line">(comment</div><div class="line">    (even-melody</div><div class="line">        (map</div><div class="line">            (comp D sharp blues)</div><div class="line">            (concat (range 08) (reverse (range 0 7)</div><div class="line">        )</div><div class="line">    )</div><div class="line">)</div></pre></td></tr></table></figure>
 <p>major is a function</p>
-<h3 id="time"><a href="#time" class="headerlink" title="time"></a>time</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(where :time (bpm 90))</span><br></pre></td></tr></table></figure>
+<h3 id="time"><a href="#time" class="headerlink" title="time"></a>time</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">(where :time (bpm 90))</div></pre></td></tr></table></figure>
 <p> bpm is a function</p>
-<h3 id="pitch"><a href="#pitch" class="headerlink" title="pitch"></a>pitch</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(where :pitch (comp C major))</span><br></pre></td></tr></table></figure>
+<h3 id="pitch"><a href="#pitch" class="headerlink" title="pitch"></a>pitch</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">(where :pitch (comp C major))</div></pre></td></tr></table></figure>
 <h3 id="run"><a href="#run" class="headerlink" title="run"></a>run</h3><p>can use run to go up and down notes</p>
 <h3 id="canon"><a href="#canon" class="headerlink" title="canon"></a>canon</h3><p>row row row your boat<br>canone alla quarta, by johann sebastian bach<br>lol, and now in G minor :p</p>
 <p>Extra:</p>
@@ -186,17 +186,17 @@ ga('send', 'pageview');
     
 <nav id="article-nav">
   
-    <a href="/blog/2014/07/24/getting-started-with-clojure-and-overtone/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/blog/2014/07/22/output-ls-contents-of-a-server-directory-using-bash/" id="article-nav-older" class="article-nav-link-wrap">
       <p class="article-nav-caption">older post</p>
-      <p class="article-nav-title">Getting started with Clojure and Overtone</p>
+      <p class="article-nav-title">Output ls contents of a server directory using bash</p>
     </a>
   
   
-    <a href="/blog/2014/07/29/illustrator-svg-layer-1-id-issue-take-2/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/blog/2014/07/24/getting-started-with-clojure-and-overtone/" id="article-nav-newer" class="article-nav-link-wrap">
       <p class="article-nav-caption">newer post</p>
       <p class="article-nav-title">
         
-          Illustrator SVG Layer 1 id issue take 2
+          Getting started with Clojure and Overtone
         
       </p>
     </a>

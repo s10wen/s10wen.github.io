@@ -185,12 +185,12 @@ ga('send', 'pageview');
 <iframe src="https://www.flickr.com/photos/simonowendesign/14244272004/in/photostream/player/" width="295" height="137" frameborder="0" allowfullscreen webkitallowfullscreen="" mozallowfullscreen="" oallowfullscreen="" msallowfullscreen=""></iframe>
 
 <p>In the following examples you don’t type out the <code>&gt;</code>.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; date</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&gt; date</div></pre></td></tr></table></figure>
 <p>Google search <code>data command</code> and you get <a href="http://www.cyberciti.biz/faq/unix-date-command-howto-see-set-date-time/" target="_blank" rel="external">http://www.cyberciti.biz/faq/unix-date-command-howto-see-set-date-time/</a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; command parameter1 parameter2 etc...</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&gt; command parameter1 parameter2 etc...</div></pre></td></tr></table></figure>
 <p>No one remembers all of them! Google is your friend :smile: also <code>--help</code> is nice.</p>
 <p>Essential commands:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ls</span><br><span class="line">cd foldername</span><br><span class="line">cd ..</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ls</div><div class="line">cd foldername</div><div class="line">cd ..</div></pre></td></tr></table></figure>
 <h2 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h2><p>First off you’ll need to install it. Some lovely instructions on how to do this are on the WP CLI home page:</p>
 <p><a href="http://wp-cli.org/" target="_blank" rel="external">http://wp-cli.org/</a></p>
 <p>Some useful things you can do with WP CLI</p>
@@ -202,38 +202,38 @@ ga('send', 'pageview');
 <li>Installing WordPress</li>
 </ul>
 <p>e.g. adding an author to a site:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; wp user create bob bob@example.com --role=author</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&gt; wp user create bob bob@example.com --role=author</div></pre></td></tr></table></figure>
 <p>Create a post:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wp post create --post_type=page --post_status=publish --post_title=&apos;A future post&apos; --post-status=future --post_date=&apos;2020-12-01 07:00:00&apos;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wp post create --post_type=page --post_status=publish --post_title=&apos;A future post&apos; --post-status=future --post_date=&apos;2020-12-01 07:00:00&apos;</div></pre></td></tr></table></figure>
 <p>Install a plugin:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># Install the latest version from wordpress.org and activate</span><br><span class="line">wp plugin install bbpress --activate</span><br><span class="line"></span><br><span class="line"># Install the development version from wordpress.org</span><br><span class="line">wp plugin install bbpress --version=dev</span><br><span class="line"></span><br><span class="line"># Install from a local zip file</span><br><span class="line">wp plugin install ../my-plugin.zip</span><br><span class="line"></span><br><span class="line"># Install from a remote zip file</span><br><span class="line">wp plugin install http://s3.amazonaws.com/bucketname/my-plugin.zip?AWSAccessKeyId=123&amp;amp;Expires=456&amp;amp;Signature=abcdef</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"># Install the latest version from wordpress.org and activate</div><div class="line">wp plugin install bbpress --activate</div><div class="line"></div><div class="line"># Install the development version from wordpress.org</div><div class="line">wp plugin install bbpress --version=dev</div><div class="line"></div><div class="line"># Install from a local zip file</div><div class="line">wp plugin install ../my-plugin.zip</div><div class="line"></div><div class="line"># Install from a remote zip file</div><div class="line">wp plugin install http://s3.amazonaws.com/bucketname/my-plugin.zip?AWSAccessKeyId=123&amp;amp;Expires=456&amp;amp;Signature=abcdef</div></pre></td></tr></table></figure>
 <p>Check a status of a plugin:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wp plugin status bbpress</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wp plugin status bbpress</div></pre></td></tr></table></figure>
 <p>Activate it:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wp plugin activate bbpress</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wp plugin activate bbpress</div></pre></td></tr></table></figure>
 <p>Create a user:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wp user create bob bob@example.com --role=administrator</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wp user create bob bob@example.com --role=administrator</div></pre></td></tr></table></figure>
 <p>After this command was ran it also nicely generated a secure password.</p>
 <p>Install plugin and activate from github:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wp plugin install https://github.com/Tarendai/better-wp-die/archive/master.zip --activate</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wp plugin install https://github.com/Tarendai/better-wp-die/archive/master.zip --activate</div></pre></td></tr></table></figure>
 <p>Activated but with warnings! Oops, looks like Tom needs to update his plugin.</p>
 <p>List plugin info:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wp plugin list</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wp plugin list</div></pre></td></tr></table></figure>
 <p>Show a list of plugins that need updating:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wp plugin list --update=available</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wp plugin list --update=available</div></pre></td></tr></table></figure>
 <p>Update plugin</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wp plugin update akismet</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wp plugin update akismet</div></pre></td></tr></table></figure>
 <p>Create a script to export the database</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /srv/www/wordpress-default</span><br><span class="line">mkdir backups</span><br><span class="line">wp db exports backups/backup.sql</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cd /srv/www/wordpress-default</div><div class="line">mkdir backups</div><div class="line">wp db exports backups/backup.sql</div></pre></td></tr></table></figure>
 <p>run with:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">. backup.sh</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">. backup.sh</div></pre></td></tr></table></figure>
 <p>drop tables</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wp db drop</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wp db drop</div></pre></td></tr></table></figure>
 <p>oops dropped the database!</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wp db create</span><br><span class="line">wp db import &lt;filepath&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">wp db create</div><div class="line">wp db import &lt;filepath&gt;</div></pre></td></tr></table></figure>
 <p>Also, thanks to Jack for a quick demo on <code>wp shell</code></p>
 <p><a href="http://wp-cli.org/commands/shell/" target="_blank" rel="external">http://wp-cli.org/commands/shell/</a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wp shell</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wp shell</div></pre></td></tr></table></figure>
 
     
   </div>
