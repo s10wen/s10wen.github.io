@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://s10wen.com/blog/2017/05/09/mcrfred-50/</loc>
+    
+    <lastmod>2017-05-09T09:45:36.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://s10wen.com/blog/2017/04/06/mcrfred-49-frank-fenten/</loc>
     
     <lastmod>2017-04-06T09:13:53.000Z</lastmod>
@@ -142,13 +149,6 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2015/09/26/footime-x2-s10wen-pretending-jamie-oliver/</loc>
-    
-    <lastmod>2016-04-20T06:42:32.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://s10wen.com/blog/2015/09/26/mcrfred-29-katie-fenn-on-chrome-dev-tools-and-measuring-css-with-parker-videos/</loc>
     
     <lastmod>2016-04-20T06:42:32.000Z</lastmod>
@@ -191,13 +191,6 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2016/04/18/mcrfred-37-barney-scott-from-code-computerlove/</loc>
-    
-    <lastmod>2016-04-20T06:42:32.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://s10wen.com/blog/2013/09/28/mcrfred-07-videos-chris-mills-on-the-importance-of-documentation/</loc>
     
     <lastmod>2016-04-20T06:42:32.000Z</lastmod>
@@ -206,6 +199,13 @@
   
   <url>
     <loc>http://s10wen.com/blog/2013/12/14/mcrfred-09-videos-manchester-freelance-front-end-developers/</loc>
+    
+    <lastmod>2016-04-20T06:42:32.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://s10wen.com/blog/2016/04/18/mcrfred-37-barney-scott-from-code-computerlove/</loc>
     
     <lastmod>2016-04-20T06:42:32.000Z</lastmod>
     
@@ -268,14 +268,14 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2015/08/15/post-SVG-Icons-Sublime-Text-Package/</loc>
+    <loc>http://s10wen.com/blog/2016/01/12/mcrfred-34-damien-seguin-from-unit9/</loc>
     
     <lastmod>2016-04-20T06:42:32.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2016/01/12/mcrfred-34-damien-seguin-from-unit9/</loc>
+    <loc>http://s10wen.com/blog/2015/08/15/post-SVG-Icons-Sublime-Text-Package/</loc>
     
     <lastmod>2016-04-20T06:42:32.000Z</lastmod>
     
@@ -290,6 +290,13 @@
   
   <url>
     <loc>http://s10wen.com/blog/2015/09/18/footime-s10wen-pretending-jamie-oliver/</loc>
+    
+    <lastmod>2016-04-20T06:42:32.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://s10wen.com/blog/2015/09/26/footime-x2-s10wen-pretending-jamie-oliver/</loc>
     
     <lastmod>2016-04-20T06:42:32.000Z</lastmod>
     
@@ -331,14 +338,7 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2014/03/01/should-dev-tool-themes-be-light-or-dark/</loc>
-    
-    <lastmod>2016-03-03T20:20:16.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://s10wen.com/blog/2013/03/19/mcrfred-is-a-go/</loc>
+    <loc>http://s10wen.com/blog/2014/03/04/gitbox-not-working/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
     
@@ -387,13 +387,6 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2013/04/07/html-5-boilerplate-and-compass/</loc>
-    
-    <lastmod>2016-03-03T20:20:16.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://s10wen.com/blog/2013/04/17/manchester-wordpres-user-group-april/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
@@ -402,6 +395,13 @@
   
   <url>
     <loc>http://s10wen.com/blog/2013/04/17/manchester-wordpress-user-group-february/</loc>
+    
+    <lastmod>2016-03-03T20:20:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://s10wen.com/blog/2013/04/07/html-5-boilerplate-and-compass/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
     
@@ -450,13 +450,6 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2013/05/14/mcrfred-round-5-andrew-nesbitt/</loc>
-    
-    <lastmod>2016-03-03T20:20:16.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://s10wen.com/blog/2013/05/15/manchester-wordpress-user-group-may/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
@@ -464,7 +457,7 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2004/06/07/explosions-in-the-sky/</loc>
+    <loc>http://s10wen.com/blog/2013/05/14/mcrfred-round-5-andrew-nesbitt/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
     
@@ -472,6 +465,13 @@
   
   <url>
     <loc>http://s10wen.com/blog/2013/05/18/deeserve/</loc>
+    
+    <lastmod>2016-03-03T20:20:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://s10wen.com/blog/2009/03/16/new-start-at-the-hut-group/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
     
@@ -499,7 +499,7 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2009/03/16/new-start-at-the-hut-group/</loc>
+    <loc>http://s10wen.com/blog/2004/06/07/explosions-in-the-sky/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
     
@@ -520,14 +520,14 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2013/06/07/rowtonhallhotel/</loc>
+    <loc>http://s10wen.com/blog/2013/06/12/octopress-is-great-until-it-breaks/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2013/06/12/octopress-is-great-until-it-breaks/</loc>
+    <loc>http://s10wen.com/blog/2013/06/07/rowtonhallhotel/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
     
@@ -604,7 +604,7 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2010/06/07/the-hut/</loc>
+    <loc>http://s10wen.com/blog/2010/05/07/woolworths-entertainment/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
     
@@ -660,7 +660,7 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2010/05/07/woolworths-entertainment/</loc>
+    <loc>http://s10wen.com/blog/2010/06/07/the-hut/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
     
@@ -751,14 +751,14 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2009/03/13/last-day-at-jd-williams/</loc>
+    <loc>http://s10wen.com/blog/2014/03/01/should-dev-tool-themes-be-light-or-dark/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2014/03/04/gitbox-not-working/</loc>
+    <loc>http://s10wen.com/blog/2009/03/13/last-day-at-jd-williams/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
     
@@ -856,7 +856,7 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2012/02/12/allsole/</loc>
+    <loc>http://s10wen.com/blog/2012/02/11/cruise-fashion/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
     
@@ -870,14 +870,14 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2014/05/21/manchester-wordpress-user-group-may/</loc>
+    <loc>http://s10wen.com/blog/2014/05/24/mcrfred-15-simon-owen/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2014/05/24/mcrfred-15-simon-owen/</loc>
+    <loc>http://s10wen.com/blog/2014/05/21/manchester-wordpress-user-group-may/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
     
@@ -919,7 +919,7 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2012/02/11/cruise-fashion/</loc>
+    <loc>http://s10wen.com/blog/2012/02/12/allsole/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
     
@@ -975,14 +975,14 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2012/02/12/halo-reach-shop/</loc>
+    <loc>http://s10wen.com/blog/2014/08/04/ux-is-everyones-responsibility-with-tom-bradley/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2014/08/04/ux-is-everyones-responsibility-with-tom-bradley/</loc>
+    <loc>http://s10wen.com/blog/2012/02/12/halo-reach-shop/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
     
@@ -1017,13 +1017,6 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2014/11/01/mcrfred-20-lightning-talks/</loc>
-    
-    <lastmod>2016-03-03T20:20:16.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://s10wen.com/blog/2014/11/08/mcrfred-21a-and-21b/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
@@ -1038,7 +1031,7 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2014/11/16/front-end-north-2014-notes/</loc>
+    <loc>http://s10wen.com/blog/2014/11/01/mcrfred-20-lightning-talks/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
     
@@ -1073,28 +1066,7 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2015/01/10/gym-and-diet/</loc>
-    
-    <lastmod>2016-03-03T20:20:16.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://s10wen.com/blog/2015/02/08/mcrfred-23-a-practical-journey-to-web-components/</loc>
-    
-    <lastmod>2016-03-03T20:20:16.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://s10wen.com/blog/2015/02/02/confconf-notes/</loc>
-    
-    <lastmod>2016-03-03T20:20:16.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://s10wen.com/blog/2015/02/08/mcrfred-24-a-day-in-the-life/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
     
@@ -1108,7 +1080,35 @@
   </url>
   
   <url>
+    <loc>http://s10wen.com/blog/2014/11/16/front-end-north-2014-notes/</loc>
+    
+    <lastmod>2016-03-03T20:20:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://s10wen.com/blog/2015/02/08/mcrfred-24-a-day-in-the-life/</loc>
+    
+    <lastmod>2016-03-03T20:20:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://s10wen.com/blog/2015/01/10/gym-and-diet/</loc>
+    
+    <lastmod>2016-03-03T20:20:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://s10wen.com/blog/2015/05/08/mcrfred-26-codepen-special/</loc>
+    
+    <lastmod>2016-03-03T20:20:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://s10wen.com/blog/2015/02/02/confconf-notes/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
     
@@ -1136,14 +1136,14 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2012/02/12/jessica-gamboa/</loc>
+    <loc>http://s10wen.com/blog/2015/06/01/mcrfred-27-tom-pearson-making-tools-for-journalists/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2015/06/01/mcrfred-27-tom-pearson-making-tools-for-journalists/</loc>
+    <loc>http://s10wen.com/blog/2012/02/12/jessica-gamboa/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
     
@@ -1241,14 +1241,14 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2015/11/10/mcrfred-33-christmas-social/</loc>
+    <loc>http://s10wen.com/blog/2012/04/05/barbados-football-legends/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2012/04/05/barbados-football-legends/</loc>
+    <loc>http://s10wen.com/blog/2012/05/28/amir-khan/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
     
@@ -1262,7 +1262,7 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2012/05/28/amir-khan/</loc>
+    <loc>http://s10wen.com/blog/2015/11/10/mcrfred-33-christmas-social/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
     
@@ -1402,14 +1402,14 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2013/01/29/codepen-theme-challenge/</loc>
+    <loc>http://s10wen.com/blog/2013/01/01/make-google-chrome-canary-default-browser/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2013/01/01/make-google-chrome-canary-default-browser/</loc>
+    <loc>http://s10wen.com/blog/2013/01/29/codepen-theme-challenge/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
     
@@ -1431,6 +1431,13 @@
   
   <url>
     <loc>http://s10wen.com/blog/2013/02/17/installing-sublime-text-2-on-lxde-linux-useful-for-raspberry-pi/</loc>
+    
+    <lastmod>2016-03-03T20:20:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://s10wen.com/blog/2013/03/07/first-octopress-post/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
     
@@ -1465,13 +1472,6 @@
   </url>
   
   <url>
-    <loc>http://s10wen.com/blog/2013/03/07/first-octopress-post/</loc>
-    
-    <lastmod>2016-03-03T20:20:16.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://s10wen.com/blog/2013/02/28/webgl-globe-github-data-idea/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
@@ -1480,6 +1480,13 @@
   
   <url>
     <loc>http://s10wen.com/speaking/index.html</loc>
+    
+    <lastmod>2016-03-03T20:20:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://s10wen.com/blog/2013/03/19/mcrfred-is-a-go/</loc>
     
     <lastmod>2016-03-03T20:20:16.000Z</lastmod>
     
