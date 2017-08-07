@@ -15,6 +15,7 @@
 <meta property="og:url" content="http://s10wen.com/blog/2013/04/07/html-5-boilerplate-and-compass/index.html">
 <meta property="og:site_name" content="Simon Owen">
 <meta property="og:description" content="Hey there, at #McrFRED someone asked if I used, Sass, LESS, Compass and how I use them. So, here’s how :sunglasses:.">
+<meta property="og:locale" content="en">
 <meta property="og:updated_time" content="2016-03-03T20:20:16.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTML 5 Boilerplate and Compass">
@@ -148,7 +149,7 @@ ga('send', 'pageview');
 <p>So for example, rather than writing out:</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#radial-gradient</span> &#123;</div><div class="line">    <span class="attribute">background-image</span>: <span class="built_in">-webkit-gradient</span>(radial, 45px 45px, 0, 45px 45px, 30, color-stop(33.333%, #00ffff), <span class="built_in">color-stop</span>(100%, #1e90ff));</div><div class="line">    <span class="attribute">background-image</span>: <span class="built_in">-webkit-radial-gradient</span>(45px 45px, #00ffff 10px, #1e90ff 30px);</div><div class="line">    <span class="attribute">background-image</span>: <span class="built_in">-moz-radial-gradient</span>(45px 45px, #00ffff 10px, #1e90ff 30px);</div><div class="line">    <span class="attribute">background-image</span>: <span class="built_in">-o-radial-gradient</span>(45px 45px, #00ffff 10px, #1e90ff 30px);</div><div class="line">    <span class="attribute">background-image</span>: <span class="built_in">radial-gradient</span>(45px 45px, #00ffff 10px, #1e90ff 30px);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>In your <code>.scss</code> file, you can write:</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#radial-gradient &#123;</div><div class="line">    @include background-image(radial-gradient(45px 45px, aqua 10px, #1e90ff 30px));</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#radial-gradient</span> &#123;</div><div class="line">    @include background-image(radial-gradient(45px 45px, aqua 10px, #1e90ff 30px));</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>Back to Terminal, run:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">compass watch</div></pre></td></tr></table></figure>
 <p>Compass will now be watching for any changes and compile the CSS.</p>

@@ -15,6 +15,7 @@
 <meta property="og:url" content="http://s10wen.com/blog/2013/03/23/adding-emoticons-to-octopress/index.html">
 <meta property="og:site_name" content="Simon Owen">
 <meta property="og:description" content="If you’re using Octopress, chances are you’re familiar with the emoticons used in GitHub. It’s possible to make use of these in an Octopress blog as well.">
+<meta property="og:locale" content="en">
 <meta property="og:updated_time" content="2016-03-03T20:20:16.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Adding emoticons to Octopress">
@@ -139,7 +140,7 @@ ga('send', 'pageview');
 <p>(Please note there shouldn’t be spaces between the <code>{</code> Octopress decided not to display the code if they were together.)</p>
 <p>Changed <code>{ { content } }</code> to <code>{ { content | emojify } }</code> in the <code>article.html</code> and <code>page.html</code>, you also do the same for anywhere else you’d like to appear and string <code>emojify</code> e.g. <code>{ { content | excerpt | emojify } }</code>. (Again please ignore the spaces between the <code>{</code>.)</p>
 <p>Also added the following in _styles.scss:</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">// Reset image styles for Emoji</div><div class="line">.emoji &#123;</div><div class="line">  box-shadow: none;</div><div class="line">  border: 0;</div><div class="line">  height: 20px;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">// Reset image styles for Emoji</div><div class="line"><span class="selector-class">.emoji</span> &#123;</div><div class="line">  <span class="attribute">box-shadow</span>: none;</div><div class="line">  <span class="attribute">border</span>: <span class="number">0</span>;</div><div class="line">  <span class="attribute">height</span>: <span class="number">20px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>Then added emoticons into posts.</p>
 <p>There’s a full list here:<br><a href="http://www.emoji-cheat-sheet.com/" target="_blank" rel="external">http://www.emoji-cheat-sheet.com/</a></p>
 <p>The default size of the images are 64x64 so finally going to run a Photoshop batch script to change the size to 20x20 to save a bit on filesize.</p>
