@@ -58,8 +58,19 @@ ga('send', 'pageview');
     </style>
   <![endif]-->
 
-  <!-- Google Analytics because other methods didn't work, sigh -->
+  <!-- Google Analytics -->
   <meta name="google-site-verification" content="p53V9PXu9GYzN6QxFvWyDUTyNux_7k7G4sKxVk3YEnY">
+
+  <!-- PWA -->
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/img/icon-152x152.png">
+  <meta name="theme-color" content="#000"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+  <meta name="apple-mobile-web-app-title" content="Simon Owen Front-End Developer"/>
+  <link rel="apple-touch-icon" href="/img/icon-152x152.png"/>
+  <meta name="msapplication-TileImage" content="/img/icon-152x152.png"/>
+  <meta name="msapplication-TileColor" content="#000"/>
 
 </head>
 
@@ -274,6 +285,7 @@ ga('send', 'pageview');
     <div id="footer-info" class="inner">© 2004-2017 <a href="http://twitter.com/s10wen">@s10wen</a></div>
   </div>
 </footer>
+<script src="/js/sw-register.js"></script>
 
 </body>
 </html>
