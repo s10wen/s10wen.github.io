@@ -1,1 +1,10 @@
-#main .thumbnail{margin-bottom:0;}.article-time{padding-bottom:0;width:25%;}.outer{max-width:42rem;}
+#main .thumbnail {
+  margin-bottom: 0;
+}
+.article-time {
+  width: 25%;
+  padding-bottom: 0;
+}
+.outer {
+  max-width: 42rem;
+}
