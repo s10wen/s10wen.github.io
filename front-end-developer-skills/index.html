@@ -9,9 +9,18 @@
 <body>
 
   <style>
+    * {
+      box-sizing: border-box;
+      word-wrap: break-word;
+    }
+
+    html {
+      padding: 0 20px;
+    }
+
     body {
-      background: #111;
-      color: #93B440;
+      background: url("https://www.toptal.com/designers/subtlepatterns/patterns/dark-triangles.png");
+      color: #777;
       font-family: arial;
       max-width: 1120px;
       margin-left: auto;
@@ -19,26 +28,66 @@
     }
 
     h1 {
-      color: #B055DA;
+      color: #FCD630;
+    }
+
+    fieldset {
+      border: 3px solid #333;
+      background: #111;
     }
 
     fieldset div {
-      padding: 10px;
-      border: 1px solid;
+      border: 1px solid #444;
       display: inline-block;
       margin: 10px;
+      position: relative;
+    }
+
+    fieldset input {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+
+    fieldset label {
+      padding: 10px 10px 10px 40px;
+      display: inline-block;
+      background: #111;
+      cursor: pointer;
     }
 
     button {
       width: 100%;
       margin-top: 20px;
       margin-bottom: 20px;
-      padding: 10px;
+      padding: 20px;
       font-size: 20px;
       background: #333;
       border: 1px solid #555;
-      color: #B055DA;
+      color: #FCD630;
       cursor: pointer;
+    }
+
+    #link {
+      font-size: 30px;
+      line-height: 40px;
+      padding: 20px 30px;
+      background: #111;
+      margin: 10px 0 30px;
+      border: 1px solid #333;
+      color: #eee;
+    }
+
+    .info {
+      padding: 10px 30px;
+      background: #111;
+      margin: 10px 0 30px;
+      border: 1px solid #333;
+      color: #ccc;
+    }
+
+    .info a {
+      color: #FCD630;
     }
   </style>
 
@@ -63,6 +112,10 @@
       <label for="LESS">LESS</label>
     </div>
     <div>
+      <input type="checkbox" id="ResponsiveDesign" name="skill" value="ResponsiveDesign">
+      <label for="ResponsiveDesign">Responsive Design</label>
+    </div>
+    <div>
       <input type="checkbox" id="JavaScript" name="skill" value="JavaScript">
       <label for="JavaScript">JavaScript</label>
     </div>
@@ -79,6 +132,10 @@
       <label for="React">React</label>
     </div>
     <div>
+      <input type="checkbox" id="Angular" name="skill" value="Angular">
+      <label for="Angular">Angular</label>
+    </div>
+    <div>
       <input type="checkbox" id="Ember" name="skill" value="Ember">
       <label for="Ember">Ember</label>
     </div>
@@ -87,12 +144,12 @@
       <label for="git">git</label>
     </div>
     <div>
-      <input type="checkbox" id="ResponsiveDesign" name="skill" value="ResponsiveDesign">
-      <label for="ResponsiveDesign">Responsive Design</label>
-    </div>
-    <div>
       <input type="checkbox" id="CommandLine" name="skill" value="CommandLine">
       <label for="CommandLine">Command Line</label>
+    </div>
+    <div>
+      <input type="checkbox" id="Dotfiles" name="skill" value="Dotfiles">
+      <label for="Dotfiles">dotfiles</label>
     </div>
     <div>
       <input type="checkbox" id="Bootstrap" name="skill" value="Bootstrap">
@@ -124,9 +181,17 @@
     </div>
   </fieldset>
 
-  <button id="answer" onclick="return answer()">Link Me!</button>
+  <button id="answer" onclick="return answer()">Create Link</button>
 
-  <div id="link">Updated link will appear here</div>
+  <div id="link">Link will appear here…</div>
+
+  <div class="info">
+    <p>Check the skills, click the 'Click Link' button, get a link you can copy and paste.</p>
+    <p>Some other ideas I'm thinking of: Add more skills, divide into sections, add 'I know these skills', 'I'd like to learn these skills'.</p>
+    <p>Pull requests / feature requests welcome:</p>
+    <p><a href="https://github.com/s10wen/s10wen.github.io/blob/master/front-end-developer-skills/index.html">https://github.com/s10wen/s10wen.github.io/blob/master/front-end-developer-skills/index.html</a></p>
+  </div>
+
 
   <script>
   function answer() {
