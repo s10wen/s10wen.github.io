@@ -1,1 +1,161 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Front-End Developer Skills</title>
+</head>
+<body>
+
+  <style>
+    body {
+      background: #111;
+      color: #93B440;
+      font-family: arial;
+      max-width: 1120px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      color: #B055DA;
+    }
+
+    fieldset div {
+      padding: 10px;
+      border: 1px solid;
+      display: inline-block;
+      margin: 10px;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 10px;
+      font-size: 20px;
+      background: #333;
+      border: 1px solid #555;
+      color: #B055DA;
+      cursor: pointer;
+    }
+  </style>
+
+  <h1>Front-End Developer Skills</h1>
+
+  <fieldset>
+    <legend>Front-End Developer Skills</legend>
+    <div>
+      <input type="checkbox" id="HTML" name="skill" value="HTML">
+      <label for="HTML">HTML</label>
+    </div>
+    <div>
+      <input type="checkbox" id="CSS" name="skill" value="CSS">
+      <label for="CSS">CSS</label>
+    </div>
+    <div>
+      <input type="checkbox" id="Sass" name="skill" value="Sass">
+      <label for="Sass">Sass</label>
+    </div>
+    <div>
+      <input type="checkbox" id="LESS" name="skill" value="LESS">
+      <label for="LESS">LESS</label>
+    </div>
+    <div>
+      <input type="checkbox" id="JavaScript" name="skill" value="JavaScript">
+      <label for="JavaScript">JavaScript</label>
+    </div>
+    <div>
+      <input type="checkbox" id="jQuery" name="skill" value="jQuery">
+      <label for="jQuery">jQuery</label>
+    </div>
+    <div>
+      <input type="checkbox" id="Backbone" name="skill" value="Backbone">
+      <label for="Backbone">Backbone</label>
+    </div>
+    <div>
+      <input type="checkbox" id="React" name="skill" value="React">
+      <label for="React">React</label>
+    </div>
+    <div>
+      <input type="checkbox" id="Ember" name="skill" value="Ember">
+      <label for="Ember">Ember</label>
+    </div>
+    <div>
+      <input type="checkbox" id="git" name="skill" value="git">
+      <label for="git">git</label>
+    </div>
+    <div>
+      <input type="checkbox" id="ResponsiveDesign" name="skill" value="ResponsiveDesign">
+      <label for="ResponsiveDesign">Responsive Design</label>
+    </div>
+    <div>
+      <input type="checkbox" id="CommandLine" name="skill" value="CommandLine">
+      <label for="CommandLine">Command Line</label>
+    </div>
+    <div>
+      <input type="checkbox" id="Bootstrap" name="skill" value="Bootstrap">
+      <label for="Bootstrap">Bootstrap</label>
+    </div>
+    <div>
+      <input type="checkbox" id="Grunt" name="skill" value="Grunt">
+      <label for="Grunt">Grunt</label>
+    </div>
+    <div>
+      <input type="checkbox" id="Gulp" name="skill" value="Gulp">
+      <label for="Gulp">Gulp</label>
+    </div>
+    <div>
+      <input type="checkbox" id="PHP" name="skill" value="PHP">
+      <label for="PHP">PHP</label>
+    </div>
+    <div>
+      <input type="checkbox" id="SQL" name="skill" value="SQL">
+      <label for="SQL">SQL</label>
+    </div>
+    <div>
+      <input type="checkbox" id="WordPress" name="skill" value="WordPress">
+      <label for="WordPress">WordPress</label>
+    </div>
+    <div>
+      <input type="checkbox" id="SVG" name="skill" value="SVG">
+      <label for="SVG">SVG</label>
+    </div>
+  </fieldset>
+
+  <button id="answer" onclick="return answer()">Link Me!</button>
+
+  <div id="link">Updated link will appear here</div>
+
+  <script>
+  function answer() {
+
+    var array = [];
+    var arrayItem = '';
+    var string = '';
+
+    for (var i = 0; i < document.querySelectorAll('input[name=skill]:checked').length; i++) {
+      arrayItem = document.querySelectorAll('input[name=skill]:checked')[i].id;
+      array.push(arrayItem);
+    }
+
+    string = array.toString();
+
+    string = string.replace(/,/g , '&');
+    console.log('?' + string);
+
+    document.getElementById('link').innerHTML = 'https://s10wen.com/front-end-developer-skills/index.html' + '?' + string;
+  }
+
+  var url = window.location.href;
+  var urlTidy = url.substr(url.indexOf('?') + 1);
+  var urlArray = urlTidy.split('&');
+
+  for (var i = 0; i < urlArray.length; i++) {
+    document.getElementById(urlArray[i]).checked = true;
+  }
+  </script>
+
+</body>
+</html>
