@@ -4,18 +4,18 @@
   <meta charset="utf-8">
   
   <title>
-    Jank Busting | Simon Owen | Front-End Developer
+    Jank Busting | Simon Owen | Freelance Front-End Developer Manchester
   </title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="keywords" content="front-end developer,manchester,s10wen,simon owen,upfrontconf,mcrfred">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="keywords" content="freelance,front-end,web,developer,manchester,s10wen,simon owen,upfrontconf,mcrfred">
   <meta name="description" content="I just spotted this rather awesome post from @aerotwist http://aerotwist.com/blog/my-performance-audit-workflow/.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Jank Busting">
-<meta property="og:url" content="http://s10wen.com/blog/2014/03/04/jank-busting/index.html">
+<meta property="og:url" content="https://s10wen.com/blog/2014/03/04/jank-busting/index.html">
 <meta property="og:site_name" content="Simon Owen">
 <meta property="og:description" content="I just spotted this rather awesome post from @aerotwist http://aerotwist.com/blog/my-performance-audit-workflow/.">
-<meta property="og:image" content="http://s10wen.com/blog/2014-03-04/timeline.png">
-<meta property="og:updated_time" content="2016-04-18T17:53:16.000Z">
+<meta property="og:image" content="https://s10wen.com/blog/2014-03-04/timeline.png">
+<meta property="og:updated_time" content="2017-11-26T08:54:16.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Jank Busting">
 <meta name="twitter:description" content="I just spotted this rather awesome post from @aerotwist http://aerotwist.com/blog/my-performance-audit-workflow/.">
@@ -24,7 +24,16 @@
   
     <link rel="icon" href="/favicon.png">
   
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  <!-- Critical CSS -->
+  <style>.article-category-link,.article-time-link,.article-title{text-decoration:none;color:#222}#container,#header,#header-outer{position:relative}#header-outer:after,#header-outer:before,.article-meta:after,.article-meta:before,.outer:after,.outer:before{content:"";display:table}#header-outer:after,.article-meta:after,.outer:after{clear:both}#main-nav,#mug,.header-logo-wrap{text-align:center}.article-category-link,.article-time-link{text-decoration:none;text-transform:uppercase;margin-bottom:1em;line-height:1em}.outer{width:90%;margin:0 auto}#main,.article-time{float:left;width:100%}.article{padding-bottom:80px}.article-meta{margin-bottom:20px}.article-event-title,.article-meta-title{font-size:.8em;text-transform:none;color:#555}.article-time{padding-bottom:5px}.article-category-link,.article-time-link{font-size:.8em}.article-title{font-size:1.4em;font-weight:700;line-height:1.1em;transition:color .2s}#header{font-weight:700;border-bottom:1px solid #999;margin-bottom:100px;background:#000}.header-link,.main-nav-link{transition:all .2s;font-weight:300;text-decoration:none}#mug{background:url(/img/mug10.jpg) 50% 50% no-repeat #000;background-size:100% 100%;width:200px;height:200px;border-radius:50%;border:10px solid #fff;position:absolute;left:50%;margin-left:-110px;margin-top:10px;margin-bottom:10px;box-shadow:0 0 12px 0 #999;animation:fadein .3s}#header-grad{background:linear-gradient(to right,rgba(0,255,255,.9),rgba(140,0,255,.9)),url(/img/header.jpg) right 50% no-repeat;width:100%;height:160px}#header-outer{padding:14px 4%;border-bottom:2px solid #333;max-width:1000px;margin:0 auto}.header-link{padding:10px;display:inline-block;color:#0ff}.header-link:hover{text-decoration:none}.header-title{font-size:1.4em;display:block;margin-bottom:5px}#subtitle-wrap{margin-top:5px;margin-bottom:16px}.main-nav-wrap{float:right;width:100%}.main-nav-link{color:#f0f;display:inline-block;margin:3px;font-size:1em;padding:10px 4px}.main-nav-link:hover{text-decoration:none}</style>
+
+  <!-- <link rel="stylesheet" href="/css/style.css" type="text/css"> -->
+  <link href="/css/style.css" rel="stylesheet">
+  <link href="/css/650.css" rel="stylesheet" media="(min-width: 650px)">
+  <link href="/css/760.css" rel="stylesheet" media="(min-width: 760px)">
+  <link href="/css/900.css" rel="stylesheet" media="(min-width: 900px)">
+
   
 <!-- Google Analytics -->
 <script type="text/javascript">
@@ -81,7 +90,7 @@ ga('send', 'pageview');
       <a class="header-link" href="/">
         
             <span class="header-title">Simon Owen</span>
-            <span class="header-subtitle">Front-End Developer</span>
+            <span class="header-subtitle">Freelance Front-End Developer Manchester</span>
         
       </a>
     </div>
@@ -90,11 +99,11 @@ ga('send', 'pageview');
         
           <a class="main-nav-link" href="/">Blog</a>
         
-          <a class="main-nav-link" href="/archives">Archives</a>
+          <a class="main-nav-link" href="/archives/">Archives</a>
         
-          <a class="main-nav-link" href="/work">Work</a>
+          <a class="main-nav-link" href="/work/">Work</a>
         
-          <a class="main-nav-link" href="/about">About</a>
+          <a class="main-nav-link" href="/about/">About</a>
         
       </nav>
     </div>
@@ -139,7 +148,7 @@ ga('send', 'pageview');
       </header>
     
     
-      <p>I just spotted this rather awesome post from <a href="http://twitter.com/aerotwist" target="_blank" rel="external">@aerotwist</a> <a href="http://aerotwist.com/blog/my-performance-audit-workflow/" target="_blank" rel="external">http://aerotwist.com/blog/my-performance-audit-workflow/</a>.</p>
+      <p>I just spotted this rather awesome post from <a href="https://twitter.com/aerotwist" target="_blank" rel="external">@aerotwist</a> <a href="http://aerotwist.com/blog/my-performance-audit-workflow/" target="_blank" rel="external">http://aerotwist.com/blog/my-performance-audit-workflow/</a>.</p>
 <a id="more"></a>
 <p>I’d previously sent Paul an email, so thanks Paul if you saw it and the post was partly in reply to my email.</p>
 <p>It’s nice to see I follow a fairly similar approach.</p>
@@ -154,7 +163,7 @@ ga('send', 'pageview');
 <li>Memory churn.</li>
 </ul>
 <p>As well as a link that had previously passed me by:</p>
-<p><a href="http://calendar.perfplanet.com/2013/the-runtime-performance-checklist/" target="_blank" rel="external">http://calendar.perfplanet.com/2013/the-runtime-performance-checklist/</a></p>
+<p><a href="https://calendar.perfplanet.com/2013/the-runtime-performance-checklist/" target="_blank" rel="external">https://calendar.perfplanet.com/2013/the-runtime-performance-checklist/</a></p>
 <p><img src="/blog/2014-03-04/timeline.png" alt="Chrome Dev Tools Timelime"></p>
 <p>I’m particularly impressed with Chome’s timeline <a href="https://developers.google.com/chrome-developer-tools/docs/timeline" target="_blank" rel="external">https://developers.google.com/chrome-developer-tools/docs/timeline</a> and find it highly rewarding, especially on mobile / tablet devices pushing for that gloriously smooth 60fps.</p>
 <p>What I’m finding frustrating at the minute is I can see spikes and where there’s room for improvement but I struggle to narrow down and find out what’s causing the issue and how to rectify it.</p>
@@ -175,9 +184,12 @@ ga('send', 'pageview');
     
   </div>
   
+    <hr>
+<a class="hire" href="/blog/2017/11/24/simon-owen-manchester-based-freelance-front-end-web-developer/">Like this post? Hire Me!</a>
+
     <div class="twitter-share-link">
   <a href="https://twitter.com/intent/tweet?url=http://s10wen.com/blog/2014/03/04/jank-busting/&amp;text=~@s10wen&amp;related=s10wen">
-    <p>Share or comment on this post via Twitter @s10wen</p>
+    <p>Share or comment on this post via Twitter</p>
   </a>
 </div>
 
@@ -206,10 +218,11 @@ ga('send', 'pageview');
 </article>
 </section>
   </div>
-  <footer id="footer">
   <div id="footer-grad"></div>
+<footer id="footer">
   <div class="outer">
-    <div id="footer-info" class="inner">© 2004-2017 <a href="http://twitter.com/s10wen">@s10wen</a></div>
+    <div id="footer-info" class="inner">© 2004-2017 <a href="https://twitter.com/s10wen">@s10wen</a></div>
+    <div class="footer-available"><a class="cta" href="">Currenlty accepting work for 2018</a></div>
   </div>
 </footer>
 <script src="/js/sw-register.js"></script>
