@@ -8,19 +8,19 @@
   </title>
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="keywords" content="freelance,front-end,web,developer,manchester,s10wen,simon owen,upfrontconf,mcrfred">
-  <meta name="description" content="One of my friends has just got a Raspberry Pi and we’re looking to create a game on it.
-Looking forward to our first ‘Game Jam’ event next week, not sure if we’ll manage to get anything up and running">
+  <meta name="description" content="One of my friends has just got a Raspberry Pi and we&apos;re looking to create a game on it.
+Looking forward to our first &apos;Game Jam&apos; event next week, not sure if we&apos;ll manage to get anything up and running">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Installing Sublime Text 2 on lxde, linux, useful for Raspberry Pi">
 <meta property="og:url" content="https://s10wen.com/blog/2013/02/17/installing-sublime-text-2-on-lxde-linux-useful-for-raspberry-pi/index.html">
 <meta property="og:site_name" content="Freelance Front-End Developer Manchester">
-<meta property="og:description" content="One of my friends has just got a Raspberry Pi and we’re looking to create a game on it.
-Looking forward to our first ‘Game Jam’ event next week, not sure if we’ll manage to get anything up and running">
+<meta property="og:description" content="One of my friends has just got a Raspberry Pi and we&apos;re looking to create a game on it.
+Looking forward to our first &apos;Game Jam&apos; event next week, not sure if we&apos;ll manage to get anything up and running">
 <meta property="og:updated_time" content="2017-11-26T08:54:16.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Installing Sublime Text 2 on lxde, linux, useful for Raspberry Pi">
-<meta name="twitter:description" content="One of my friends has just got a Raspberry Pi and we’re looking to create a game on it.
-Looking forward to our first ‘Game Jam’ event next week, not sure if we’ll manage to get anything up and running">
+<meta name="twitter:description" content="One of my friends has just got a Raspberry Pi and we&apos;re looking to create a game on it.
+Looking forward to our first &apos;Game Jam&apos; event next week, not sure if we&apos;ll manage to get anything up and running">
 <meta name="twitter:creator" content="@s10wen">
   
   
@@ -28,7 +28,7 @@ Looking forward to our first ‘Game Jam’ event next week, not sure if we’ll
   
 
   <!-- Critical CSS -->
-  <style>.article-category-link,.article-time-link,.article-title{text-decoration:none;color:#222}#container,#header,#header-outer{position:relative}#header-outer:after,#header-outer:before,.article-meta:after,.article-meta:before,.outer:after,.outer:before{content:"";display:table}#header-outer:after,.article-meta:after,.outer:after{clear:both}#main-nav,#mug,.header-logo-wrap{text-align:center}.article-category-link,.article-time-link{text-decoration:none;text-transform:uppercase;margin-bottom:1em;line-height:1em}.outer{width:90%;margin:0 auto}#main,.article-time{float:left;width:100%}.article{padding-bottom:80px}.article-meta{margin-bottom:20px}.article-event-title,.article-meta-title{font-size:.8em;text-transform:none;color:#555}.article-time{padding-bottom:5px}.article-category-link,.article-time-link{font-size:.8em}.article-title{font-size:1.4em;font-weight:700;line-height:1.1em;transition:color .2s}#header{font-weight:700;border-bottom:1px solid #999;margin-bottom:100px;background:#000}.header-link,.main-nav-link{transition:all .2s;font-weight:300;text-decoration:none}#mug{background:url(/img/mug10.jpg) 50% 50% no-repeat #000;background-size:100% 100%;width:200px;height:200px;border-radius:50%;border:10px solid #fff;position:absolute;left:50%;margin-left:-110px;margin-top:10px;margin-bottom:10px;box-shadow:0 0 12px 0 #999;animation:fadein .3s}#header-grad{background:linear-gradient(to right,rgba(0,255,255,.9),rgba(140,0,255,.9)),url(/img/header.jpg) right 50% no-repeat;width:100%;height:160px}#header-outer{padding:14px 4%;border-bottom:2px solid #333;max-width:1000px;margin:0 auto}.header-link{padding:10px;display:inline-block;color:#0ff}.header-link:hover{text-decoration:none}.header-title{font-size:1.2em;display:block;margin-bottom:5px}#subtitle-wrap{margin-top:5px;margin-bottom:16px}.main-nav-wrap{float:right;width:100%}.main-nav-link{color:#f0f;display:inline-block;margin:3px;font-size:1em;padding:10px 4px}.main-nav-link:hover{text-decoration:none}</style>
+  <style>.article-category-link,.article-time-link,.article-title{text-decoration:none;color:#222}#container,#header,#header-outer{position:relative}#header-outer:after,#header-outer:before,.article-meta:after,.article-meta:before,.outer:after,.outer:before{content:"";display:table}#header-outer:after,.article-meta:after,.outer:after{clear:both}#main-nav,#mug,.header-logo-wrap{text-align:center}.article-category-link,.article-time-link{text-decoration:none;text-transform:uppercase;margin-bottom:1em;line-height:1em}.outer{width:90%;margin:0 auto}#main,.article-time{float:left;width:100%}.article{padding-bottom:80px}.article-meta{margin-bottom:20px}.article-event-title,.article-meta-title{font-size:.8em;text-transform:none;color:#555}.article-time{padding-bottom:5px}.article-category-link,.article-time-link{font-size:.8em}.article-title{font-size:1.4em;font-weight:700;line-height:1.1em;transition:color .2s}#header{font-weight:700;border-bottom:1px solid #999;margin-bottom:60px;background:#000}.header-link,.main-nav-link{transition:all .2s;font-weight:300;text-decoration:none}#mug{background:url(/img/mug.jpg) 50% 50% no-repeat #000;background-size:100% 100%;width:200px;height:200px;border-radius:50%;border:10px solid #fff;position:absolute;left:50%;margin-left:-110px;margin-top:10px;margin-bottom:10px;box-shadow:0 0 12px 0 #999;animation:fadein .3s}#header-grad{background:linear-gradient(to right,rgba(0,255,255,.9),rgba(140,0,255,.9)),url(/img/header.jpg) right 50% no-repeat;width:100%;height:160px}#header-outer{padding:14px 4%;border-bottom:2px solid #333;max-width:1000px;margin:0 auto}.header-link{padding:10px;display:inline-block;color:#0ff}.header-link:hover{text-decoration:none}.header-title{font-size:1.2em;display:block;margin-bottom:5px}#subtitle-wrap{margin-top:5px;margin-bottom:16px}.main-nav-wrap{float:right;width:100%}.main-nav-link{color:#f0f;display:inline-block;margin:3px;font-size:1em;padding:10px 4px}.main-nav-link:hover{text-decoration:none}</style>
 
   <!-- <link rel="stylesheet" href="/css/style.css" type="text/css"> -->
   <link href="/css/style.css" rel="stylesheet">
@@ -101,7 +101,7 @@ ga('send', 'pageview');
         
           <a class="main-nav-link" href="/">Blog</a>
         
-          <a class="main-nav-link" href="/archives/">Archives</a>
+          <a class="main-nav-link" href="/services/">Services</a>
         
           <a class="main-nav-link" href="/work/">Work</a>
         
@@ -152,15 +152,15 @@ ga('send', 'pageview');
       </header>
     
     
-      <p>One of my friends has just got a Raspberry Pi and we’re looking to create a game on it.</p>
-<p>Looking forward to our first ‘Game Jam’ event next week, not sure if we’ll manage to get anything up and running, but sure it’ll be fun and looking forward to seeing what the other people get up to.</p>
+      <p>One of my friends has just got a Raspberry Pi and we're looking to create a game on it.</p>
+<p>Looking forward to our first 'Game Jam' event next week, not sure if we'll manage to get anything up and running, but sure it'll be fun and looking forward to seeing what the other people get up to.</p>
 <a id="more"></a>
 <p><a href="https://twitter.com/MCRgamejam" target="_blank" rel="external">https://twitter.com/MCRgamejam</a></p>
-<p>vintage.madlab.org.uk/content/manchester-game-jam-24th-feb-2013</p>
-<p>I’ve been <a href="https://www.youtube.com/watch?v=NVVLlUb7vhE" target="_blank" rel="external">following these tutorials</a> and so far have managed to get a Virtual Box up and running with lxde and using Geany as a text editor. I’m familiar with and love Sublime Text 2, so wanted to get this up and running.</p>
+<p><a href="http://vintage.madlab.org.uk/content/manchester-game-jam-24th-feb-2013" target="_blank" rel="external">vintage.madlab.org.uk/content/manchester-game-jam-24th-feb-2013</a></p>
+<p>I've been <a href="https://www.youtube.com/watch?v=NVVLlUb7vhE" target="_blank" rel="external">following these tutorials</a> and so far have managed to get a Virtual Box up and running with lxde and using Geany as a text editor. I'm familiar with and love Sublime Text 2, so wanted to get this up and running.</p>
 <p>Reading over this blog:</p>
 <p><a href="https://community.linuxmint.com/tutorial/view/907" target="_blank" rel="external">https://community.linuxmint.com/tutorial/view/907</a></p>
-<p>I set about the first method, but unfortunately that didn’t work, so had to go through the more complicated second method. In doing so I ran into some issues, <code>gksu gedit /usr/bin/sublime_text</code> created a file but didn’t bring it up allowing me to edit it. In the tutorials you don’t install <a href="https://wiki.gnome.org/Apps/Gedit" target="_blank" rel="external">gedit</a> so guessing as it can’t find the application it just doesn’t do anything. Then tried opening it via Geany but was then unable to save the file.</p>
+<p>I set about the first method, but unfortunately that didn't work, so had to go through the more complicated second method. In doing so I ran into some issues, <code>gksu gedit /usr/bin/sublime_text</code> created a file but didn't bring it up allowing me to edit it. In the tutorials you don't install <a href="https://wiki.gnome.org/Apps/Gedit" target="_blank" rel="external">gedit</a> so guessing as it can't find the application it just doesn't do anything. Then tried opening it via Geany but was then unable to save the file.</p>
 <p>To get around this I opened up the terminal, changed to the root user <code>su root</code> went to correct path, then did <code>sudo geany sublime_text</code> in order to open the file in Geany as the root user, thus allowing me to save it.</p>
 <p>Then created the <code>sublime.desktop</code> in Geany and saved in the location described.</p>
 

@@ -25,7 +25,7 @@
   
 
   <!-- Critical CSS -->
-  <style>.article-category-link,.article-time-link,.article-title{text-decoration:none;color:#222}#container,#header,#header-outer{position:relative}#header-outer:after,#header-outer:before,.article-meta:after,.article-meta:before,.outer:after,.outer:before{content:"";display:table}#header-outer:after,.article-meta:after,.outer:after{clear:both}#main-nav,#mug,.header-logo-wrap{text-align:center}.article-category-link,.article-time-link{text-decoration:none;text-transform:uppercase;margin-bottom:1em;line-height:1em}.outer{width:90%;margin:0 auto}#main,.article-time{float:left;width:100%}.article{padding-bottom:80px}.article-meta{margin-bottom:20px}.article-event-title,.article-meta-title{font-size:.8em;text-transform:none;color:#555}.article-time{padding-bottom:5px}.article-category-link,.article-time-link{font-size:.8em}.article-title{font-size:1.4em;font-weight:700;line-height:1.1em;transition:color .2s}#header{font-weight:700;border-bottom:1px solid #999;margin-bottom:100px;background:#000}.header-link,.main-nav-link{transition:all .2s;font-weight:300;text-decoration:none}#mug{background:url(/img/mug10.jpg) 50% 50% no-repeat #000;background-size:100% 100%;width:200px;height:200px;border-radius:50%;border:10px solid #fff;position:absolute;left:50%;margin-left:-110px;margin-top:10px;margin-bottom:10px;box-shadow:0 0 12px 0 #999;animation:fadein .3s}#header-grad{background:linear-gradient(to right,rgba(0,255,255,.9),rgba(140,0,255,.9)),url(/img/header.jpg) right 50% no-repeat;width:100%;height:160px}#header-outer{padding:14px 4%;border-bottom:2px solid #333;max-width:1000px;margin:0 auto}.header-link{padding:10px;display:inline-block;color:#0ff}.header-link:hover{text-decoration:none}.header-title{font-size:1.2em;display:block;margin-bottom:5px}#subtitle-wrap{margin-top:5px;margin-bottom:16px}.main-nav-wrap{float:right;width:100%}.main-nav-link{color:#f0f;display:inline-block;margin:3px;font-size:1em;padding:10px 4px}.main-nav-link:hover{text-decoration:none}</style>
+  <style>.article-category-link,.article-time-link,.article-title{text-decoration:none;color:#222}#container,#header,#header-outer{position:relative}#header-outer:after,#header-outer:before,.article-meta:after,.article-meta:before,.outer:after,.outer:before{content:"";display:table}#header-outer:after,.article-meta:after,.outer:after{clear:both}#main-nav,#mug,.header-logo-wrap{text-align:center}.article-category-link,.article-time-link{text-decoration:none;text-transform:uppercase;margin-bottom:1em;line-height:1em}.outer{width:90%;margin:0 auto}#main,.article-time{float:left;width:100%}.article{padding-bottom:80px}.article-meta{margin-bottom:20px}.article-event-title,.article-meta-title{font-size:.8em;text-transform:none;color:#555}.article-time{padding-bottom:5px}.article-category-link,.article-time-link{font-size:.8em}.article-title{font-size:1.4em;font-weight:700;line-height:1.1em;transition:color .2s}#header{font-weight:700;border-bottom:1px solid #999;margin-bottom:60px;background:#000}.header-link,.main-nav-link{transition:all .2s;font-weight:300;text-decoration:none}#mug{background:url(/img/mug.jpg) 50% 50% no-repeat #000;background-size:100% 100%;width:200px;height:200px;border-radius:50%;border:10px solid #fff;position:absolute;left:50%;margin-left:-110px;margin-top:10px;margin-bottom:10px;box-shadow:0 0 12px 0 #999;animation:fadein .3s}#header-grad{background:linear-gradient(to right,rgba(0,255,255,.9),rgba(140,0,255,.9)),url(/img/header.jpg) right 50% no-repeat;width:100%;height:160px}#header-outer{padding:14px 4%;border-bottom:2px solid #333;max-width:1000px;margin:0 auto}.header-link{padding:10px;display:inline-block;color:#0ff}.header-link:hover{text-decoration:none}.header-title{font-size:1.2em;display:block;margin-bottom:5px}#subtitle-wrap{margin-top:5px;margin-bottom:16px}.main-nav-wrap{float:right;width:100%}.main-nav-link{color:#f0f;display:inline-block;margin:3px;font-size:1em;padding:10px 4px}.main-nav-link:hover{text-decoration:none}</style>
 
   <!-- <link rel="stylesheet" href="/css/style.css" type="text/css"> -->
   <link href="/css/style.css" rel="stylesheet">
@@ -98,7 +98,7 @@ ga('send', 'pageview');
         
           <a class="main-nav-link" href="/">Blog</a>
         
-          <a class="main-nav-link" href="/archives/">Archives</a>
+          <a class="main-nav-link" href="/services/">Services</a>
         
           <a class="main-nav-link" href="/work/">Work</a>
         
@@ -151,19 +151,19 @@ ga('send', 'pageview');
     
       <p>Wrote up a little CodePen to demo how Sass and Compass can help with theming.</p>
 <a id="more"></a>
-<p>This code is useful if you’re writing a theme and want to easily change colours.</p>
-<p>The problem, your design calls for multiple colour values. So in CSS you’d have to declare each of these values, for example.</p>
+<p>This code is useful if you're writing a theme and want to easily change colours.</p>
+<p>The problem, your design calls for multiple colour values. So in CSS you'd have to declare each of these values, for example.</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">body</span> <span class="rules">&#123;</span><br><span class="line">    <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="hexcolor">#003</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">p</span> <span class="rules">&#123;</span><br><span class="line">    <span class="rule"><span class="attribute">colour</span>:<span class="value"> blue</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">a</span> <span class="rules">&#123;</span><br><span class="line">    <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">linear-gradient</span>(<span class="hexcolor">#3333ff</span>, <span class="hexcolor">#0000cc</span>)</span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">box-shadow</span>:<span class="value"> <span class="hexcolor">#3333ff</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0.4em</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
-<p>Now, what if you want to create another theme that’s red? That means, working out and changing all the colour values. Enter Sass.</p>
+<p>Now, what if you want to create another theme that's red? That means, working out and changing all the colour values. Enter Sass.</p>
 <p>Using variables such as:</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$base: red;&#10;&#10;$base-light: lighten( $base, 10% );&#10;$base-lighter: lighten( $base, 40% );&#10;$base-dark: darken( $base, 10% );&#10;$base-darker: darken( $base, 40% );</span><br></pre></td></tr></table></figure>
 <p>Then calling them in your Sass file, you now only have to change one value to change all the values throughout the entire document.</p>
 <p>Taking things a step further, you can also make use of Compass to handle all those vendor prefixes.</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@include background-image(linear-gradient($base-light, $base-dark));&#10;@include box-shadow($base-light 0 0 1em);&#10;@include text-shadow(rgba($base-lighter, 1) 0 0 2em);</span><br></pre></td></tr></table></figure>
-<h2 id="Video"><a href="#Video" class="headerlink" title="Video"></a>Video</h2><iframe src="http://www.youtube.com/embed/YSrFbTb7Fr4" frameborder="0" allowfullscreen></iframe>
-
-
-<h2 id="CodePen"><a href="#CodePen" class="headerlink" title="CodePen"></a>CodePen</h2><p><a href="http://codepen.io/simonowendesign/pen/wHLDc" target="_blank" rel="external">http://codepen.io/simonowendesign/pen/wHLDc</a></p>
+<h2>Video</h2>
+<iframe src="http://www.youtube.com/embed/YSrFbTb7Fr4" frameborder="0" allowfullscreen></iframe>
+<h2>CodePen</h2>
+<p><a href="http://codepen.io/simonowendesign/pen/wHLDc" target="_blank" rel="external">http://codepen.io/simonowendesign/pen/wHLDc</a></p>
 
     
   </div>

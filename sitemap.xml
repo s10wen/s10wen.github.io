@@ -2,27 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://s10wen.com/blog/2017/12/22/last-day-at-thehutgroup/</loc>
+    <lastmod>2017-12-24T18:33:41.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s10wen.com/about/index.html</loc>
+    <lastmod>2017-12-23T12:09:08.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s10wen.com/contact/index.html</loc>
+    <lastmod>2017-12-23T12:09:08.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s10wen.com/faces/index.html</loc>
+    <lastmod>2017-12-23T12:09:08.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s10wen.com/services/index.html</loc>
+    <lastmod>2017-12-23T12:09:08.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s10wen.com/styleguide/index.html</loc>
+    <lastmod>2017-12-23T12:09:08.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s10wen.com/blog/2017/11/24/simon-owen-manchester-based-freelance-front-end-web-developer/</loc>
+    <lastmod>2017-12-23T12:09:08.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s10wen.com/blog/2014/11/01/mcrfred-20-lightning-talks/</loc>
+    <lastmod>2017-12-23T12:09:08.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s10wen.com/blog/2017/02/14/mcrfred-47-simon-owen-samantha-rogulska/</loc>
+    <lastmod>2017-12-13T18:07:15.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s10wen.com/blog/2015/04/14/mcrfred-25-andi-smith/</loc>
+    <lastmod>2017-12-13T18:07:15.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s10wen.com/speaking/index.html</loc>
+    <lastmod>2017-12-13T18:07:15.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>https://s10wen.com/blog/2017/12/06/mcrfred-workshops/</loc>
     <lastmod>2017-12-07T16:31:36.000Z</lastmod>
   </url>
   
   <url>
-    <loc>https://s10wen.com/services/index.html</loc>
-    <lastmod>2017-12-07T16:11:23.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://s10wen.com/styleguide/index.html</loc>
-    <lastmod>2017-12-06T18:35:11.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://s10wen.com/contact/index.html</loc>
-    <lastmod>2017-12-05T18:29:20.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://s10wen.com/japan2016/index.html</loc>
+    <loc>https://s10wen.com/clients/index.html</loc>
     <lastmod>2017-12-05T18:29:20.000Z</lastmod>
   </url>
   
@@ -32,47 +72,12 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/about/index.html</loc>
-    <lastmod>2017-12-05T18:29:20.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://s10wen.com/speaking/index.html</loc>
-    <lastmod>2017-12-05T18:29:20.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://s10wen.com/clients/index.html</loc>
-    <lastmod>2017-12-05T18:29:20.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>https://s10wen.com/blog/2009/03/16/new-start-at-the-hut-group/</loc>
     <lastmod>2017-12-05T18:29:20.000Z</lastmod>
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2017/11/24/simon-owen-manchester-based-freelance-front-end-web-developer/</loc>
-    <lastmod>2017-11-26T09:02:01.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>https://s10wen.com/blog/2014/01/02/mcrfred-11-ben-frain/</loc>
-    <lastmod>2017-11-26T08:54:16.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://s10wen.com/blog/2017/03/10/mcrfred-48-codepen/</loc>
-    <lastmod>2017-11-26T08:54:16.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://s10wen.com/blog/2017/09/21/fix-the-white-bars-in-safari-on-iphone-x/</loc>
-    <lastmod>2017-11-26T08:54:16.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://s10wen.com/blog/2017/02/14/mcrfred-47-simon-owen-samantha-rogulska/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
@@ -227,12 +232,12 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2017/07/24/mcrfred-55-freelance-special/</loc>
+    <loc>https://s10wen.com/blog/2017/09/21/fix-the-white-bars-in-safari-on-iphone-x/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2017/07/17/mcrfred-54-rapidfire/</loc>
+    <loc>https://s10wen.com/blog/2017/04/06/mcrfred-49-frank-fenten/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
@@ -242,7 +247,7 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2017/07/17/mcrfred-53-rich-higgins/</loc>
+    <loc>https://s10wen.com/blog/2017/07/24/mcrfred-55-freelance-special/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
@@ -257,7 +262,7 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2017/07/17/mcrfred-52-alex-lakatos/</loc>
+    <loc>https://s10wen.com/blog/2017/07/17/mcrfred-54-rapidfire/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
@@ -297,7 +302,7 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2015/04/14/mcrfred-25-andi-smith/</loc>
+    <loc>https://s10wen.com/blog/2017/06/06/mcrfred-51-mike-byrne/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
@@ -357,7 +362,7 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2014/11/01/mcrfred-20-lightning-talks/</loc>
+    <loc>https://s10wen.com/blog/2017/07/17/mcrfred-53-rich-higgins/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
@@ -577,12 +582,12 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2014/01/18/mcrfred-2014-sponsors/</loc>
+    <loc>https://s10wen.com/blog/2017/07/17/mcrfred-52-alex-lakatos/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2017/05/09/mcrfred-50/</loc>
+    <loc>https://s10wen.com/blog/2014/01/16/manchester-wordpress-user-group-january/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
@@ -607,7 +612,7 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2017/04/06/mcrfred-49-frank-fenten/</loc>
+    <loc>https://s10wen.com/blog/2017/03/10/mcrfred-48-codepen/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
@@ -1072,7 +1077,7 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2017/06/06/mcrfred-51-mike-byrne/</loc>
+    <loc>https://s10wen.com/blog/2017/05/09/mcrfred-50/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
@@ -1097,7 +1102,7 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2014/01/16/manchester-wordpress-user-group-january/</loc>
+    <loc>https://s10wen.com/blog/2014/01/18/mcrfred-2014-sponsors/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
@@ -1108,11 +1113,6 @@
   
   <url>
     <loc>https://s10wen.com/blog/2017/06/26/google-web-community-leads-summit/</loc>
-    <lastmod>2017-09-19T20:46:22.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://s10wen.com/blog/2017/08/11/updating-firmware-on-fuji-xe2/</loc>
     <lastmod>2017-09-19T20:46:22.000Z</lastmod>
   </url>
   
@@ -1132,6 +1132,11 @@
   </url>
   
   <url>
+    <loc>https://s10wen.com/blog/2017/08/11/updating-firmware-on-fuji-xe2/</loc>
+    <lastmod>2017-09-19T20:46:22.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>https://s10wen.com/blog/2015/09/26/footime-x2-s10wen-pretending-jamie-oliver/</loc>
     <lastmod>2016-04-18T17:55:02.000Z</lastmod>
   </url>
@@ -1144,11 +1149,6 @@
   <url>
     <loc>https://s10wen.com/blog/2015/08/15/post-SVG-Icons-Sublime-Text-Package/</loc>
     <lastmod>2016-04-18T17:45:53.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://s10wen.com/faces/index.html</loc>
-    <lastmod>2016-03-24T12:35:54.000Z</lastmod>
   </url>
   
   <url>

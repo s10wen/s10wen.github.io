@@ -8,16 +8,16 @@
   </title>
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="keywords" content="freelance,front-end,web,developer,manchester,s10wen,simon owen,upfrontconf,mcrfred">
-  <meta name="description" content="Continuing on from my previous post. I had a few issues getting up and running on my mac so thought I’d put a quick blog post up in case it helps anyone.">
+  <meta name="description" content="Continuing on from my previous post. I had a few issues getting up and running on my mac so thought I&apos;d put a quick blog post up in case it helps anyone.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Getting started with Clojure and Overtone">
 <meta property="og:url" content="https://s10wen.com/blog/2014/07/24/getting-started-with-clojure-and-overtone/index.html">
 <meta property="og:site_name" content="Freelance Front-End Developer Manchester">
-<meta property="og:description" content="Continuing on from my previous post. I had a few issues getting up and running on my mac so thought I’d put a quick blog post up in case it helps anyone.">
+<meta property="og:description" content="Continuing on from my previous post. I had a few issues getting up and running on my mac so thought I&apos;d put a quick blog post up in case it helps anyone.">
 <meta property="og:updated_time" content="2017-11-26T08:54:16.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Getting started with Clojure and Overtone">
-<meta name="twitter:description" content="Continuing on from my previous post. I had a few issues getting up and running on my mac so thought I’d put a quick blog post up in case it helps anyone.">
+<meta name="twitter:description" content="Continuing on from my previous post. I had a few issues getting up and running on my mac so thought I&apos;d put a quick blog post up in case it helps anyone.">
 <meta name="twitter:creator" content="@s10wen">
   
   
@@ -25,7 +25,7 @@
   
 
   <!-- Critical CSS -->
-  <style>.article-category-link,.article-time-link,.article-title{text-decoration:none;color:#222}#container,#header,#header-outer{position:relative}#header-outer:after,#header-outer:before,.article-meta:after,.article-meta:before,.outer:after,.outer:before{content:"";display:table}#header-outer:after,.article-meta:after,.outer:after{clear:both}#main-nav,#mug,.header-logo-wrap{text-align:center}.article-category-link,.article-time-link{text-decoration:none;text-transform:uppercase;margin-bottom:1em;line-height:1em}.outer{width:90%;margin:0 auto}#main,.article-time{float:left;width:100%}.article{padding-bottom:80px}.article-meta{margin-bottom:20px}.article-event-title,.article-meta-title{font-size:.8em;text-transform:none;color:#555}.article-time{padding-bottom:5px}.article-category-link,.article-time-link{font-size:.8em}.article-title{font-size:1.4em;font-weight:700;line-height:1.1em;transition:color .2s}#header{font-weight:700;border-bottom:1px solid #999;margin-bottom:100px;background:#000}.header-link,.main-nav-link{transition:all .2s;font-weight:300;text-decoration:none}#mug{background:url(/img/mug10.jpg) 50% 50% no-repeat #000;background-size:100% 100%;width:200px;height:200px;border-radius:50%;border:10px solid #fff;position:absolute;left:50%;margin-left:-110px;margin-top:10px;margin-bottom:10px;box-shadow:0 0 12px 0 #999;animation:fadein .3s}#header-grad{background:linear-gradient(to right,rgba(0,255,255,.9),rgba(140,0,255,.9)),url(/img/header.jpg) right 50% no-repeat;width:100%;height:160px}#header-outer{padding:14px 4%;border-bottom:2px solid #333;max-width:1000px;margin:0 auto}.header-link{padding:10px;display:inline-block;color:#0ff}.header-link:hover{text-decoration:none}.header-title{font-size:1.2em;display:block;margin-bottom:5px}#subtitle-wrap{margin-top:5px;margin-bottom:16px}.main-nav-wrap{float:right;width:100%}.main-nav-link{color:#f0f;display:inline-block;margin:3px;font-size:1em;padding:10px 4px}.main-nav-link:hover{text-decoration:none}</style>
+  <style>.article-category-link,.article-time-link,.article-title{text-decoration:none;color:#222}#container,#header,#header-outer{position:relative}#header-outer:after,#header-outer:before,.article-meta:after,.article-meta:before,.outer:after,.outer:before{content:"";display:table}#header-outer:after,.article-meta:after,.outer:after{clear:both}#main-nav,#mug,.header-logo-wrap{text-align:center}.article-category-link,.article-time-link{text-decoration:none;text-transform:uppercase;margin-bottom:1em;line-height:1em}.outer{width:90%;margin:0 auto}#main,.article-time{float:left;width:100%}.article{padding-bottom:80px}.article-meta{margin-bottom:20px}.article-event-title,.article-meta-title{font-size:.8em;text-transform:none;color:#555}.article-time{padding-bottom:5px}.article-category-link,.article-time-link{font-size:.8em}.article-title{font-size:1.4em;font-weight:700;line-height:1.1em;transition:color .2s}#header{font-weight:700;border-bottom:1px solid #999;margin-bottom:60px;background:#000}.header-link,.main-nav-link{transition:all .2s;font-weight:300;text-decoration:none}#mug{background:url(/img/mug.jpg) 50% 50% no-repeat #000;background-size:100% 100%;width:200px;height:200px;border-radius:50%;border:10px solid #fff;position:absolute;left:50%;margin-left:-110px;margin-top:10px;margin-bottom:10px;box-shadow:0 0 12px 0 #999;animation:fadein .3s}#header-grad{background:linear-gradient(to right,rgba(0,255,255,.9),rgba(140,0,255,.9)),url(/img/header.jpg) right 50% no-repeat;width:100%;height:160px}#header-outer{padding:14px 4%;border-bottom:2px solid #333;max-width:1000px;margin:0 auto}.header-link{padding:10px;display:inline-block;color:#0ff}.header-link:hover{text-decoration:none}.header-title{font-size:1.2em;display:block;margin-bottom:5px}#subtitle-wrap{margin-top:5px;margin-bottom:16px}.main-nav-wrap{float:right;width:100%}.main-nav-link{color:#f0f;display:inline-block;margin:3px;font-size:1em;padding:10px 4px}.main-nav-link:hover{text-decoration:none}</style>
 
   <!-- <link rel="stylesheet" href="/css/style.css" type="text/css"> -->
   <link href="/css/style.css" rel="stylesheet">
@@ -98,7 +98,7 @@ ga('send', 'pageview');
         
           <a class="main-nav-link" href="/">Blog</a>
         
-          <a class="main-nav-link" href="/archives/">Archives</a>
+          <a class="main-nav-link" href="/services/">Services</a>
         
           <a class="main-nav-link" href="/work/">Work</a>
         
@@ -149,7 +149,7 @@ ga('send', 'pageview');
       </header>
     
     
-      <p>Continuing on from my <a href="/blog/2014/07/24/creating-music-with-clojure-and-overtone-with-chris-ford/">previous post</a>. I had a few issues getting up and running on my mac so thought I’d put a quick blog post up in case it helps anyone.</p>
+      <p>Continuing on from my <a href="/blog/2014/07/24/creating-music-with-clojure-and-overtone-with-chris-ford/">previous post</a>. I had a few issues getting up and running on my mac so thought I'd put a quick blog post up in case it helps anyone.</p>
 <a id="more"></a>
 <p>First I headed over to: <a href="https://github.com/overtone/overtone" target="_blank" rel="external">https://github.com/overtone/overtone</a></p>
 <p>And read this:</p>
@@ -160,25 +160,37 @@ ga('send', 'pageview');
 <li>Set it to be executable. (chmod 755 ~/bin/lein)</li>
 <li>Run it.</li>
 </ol>
-<p>Here’s a bit more detail:</p>
-<p>1) First off I tried in the command line <code>java -version</code> but this isn’t what you’re after. You need the actual JDK, I’m not sure how to check if you have this installed, but I was pretty sure I didn’t so went to google and typed <code>Java JDK download</code> and got to: <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="external">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a></p>
-<p>2) To download this, <a href="https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein" target="_blank" rel="external">open the link</a> in a new tab, copy the contents and save this to a file called <code>lein</code> on your local machine.</p>
-<p>3) I’m not sure if this is the correct way to do this, but it worked for me. I moved the file <code>lein</code> created in the previous step to the bin folder in the root folder of my machine, a handy shortcut is to open the Finder, then <code>Shift+Cmd+G</code> then can paste in <code>~/bin</code> to get to that folder.</p>
-<p>4) In Terminal (or I use iTerm, whatever you use for writing commands on the command line) paste in <code>chmod 755 ~/bin/lein</code> and hit enter so it runs. This will change the permissions of the file.</p>
-<p>5) To run it, in Terminal do <code>bash lein</code> and again hit enter so that commands runs.</p>
+<p>Here's a bit more detail:</p>
+<ol>
+<li>
+<p>First off I tried in the command line <code>java -version</code> but this isn't what you're after. You need the actual JDK, I'm not sure how to check if you have this installed, but I was pretty sure I didn't so went to google and typed <code>Java JDK download</code> and got to: <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="external">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a></p>
+</li>
+<li>
+<p>To download this, <a href="https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein" target="_blank" rel="external">open the link</a> in a new tab, copy the contents and save this to a file called <code>lein</code> on your local machine.</p>
+</li>
+<li>
+<p>I'm not sure if this is the correct way to do this, but it worked for me. I moved the file <code>lein</code> created in the previous step to the bin folder in the root folder of my machine, a handy shortcut is to open the Finder, then <code>Shift+Cmd+G</code> then can paste in <code>~/bin</code> to get to that folder.</p>
+</li>
+<li>
+<p>In Terminal (or I use iTerm, whatever you use for writing commands on the command line) paste in <code>chmod 755 ~/bin/lein</code> and hit enter so it runs. This will change the permissions of the file.</p>
+</li>
+<li>
+<p>To run it, in Terminal do <code>bash lein</code> and again hit enter so that commands runs.</p>
+</li>
+</ol>
 <p>I then then did <code>lein new insane-noises</code>, <code>cd insane-noises</code>, <code>lein repl</code>, but got:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#3900; &#12388; &#9685;_&#9685; &#3901;&#12388;&#9889;  lein repl&#10;nREPL server started on port 49492 on host 127.0.0.1 - nrepl://127.0.0.1:49492&#10;REPL-y 0.3.1&#10;Clojure 1.6.0&#10;    Docs: (doc function-name-here)&#10;          (find-doc &#34;part-of-name-here&#34;)&#10;  Source: (source function-name-here)&#10; Javadoc: (javadoc java-object-or-class-here)&#10;    Exit: Control+D or (exit) or (quit)&#10; Results: Stored in vars *1, *2, *3, an exception in *e&#10;&#10;user=&#62;</span><br></pre></td></tr></table></figure>
 <p>For some reason not all the dependencies are included in the <code>insane-noises/project.clj</code> file, to fix this I had to add in the  dependencies manually, so changed the <code>project.clj</code> file from:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(defproject insane-noises &#34;0.1.0-SNAPSHOT&#34;&#10;  :description &#34;FIXME: write description&#34;&#10;  :url &#34;http://example.com/FIXME&#34;&#10;  :license &#123;:name &#34;Eclipse Public License&#34;&#10;            :url &#34;http://www.eclipse.org/legal/epl-v10.html&#34;&#125;&#10;  :dependencies [[org.clojure/clojure &#34;1.6.0&#34;]])</span><br></pre></td></tr></table></figure>
 <p>to:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(defproject insane-noises &#34;0.1.0-SNAPSHOT&#34;&#10;  :description &#34;FIXME: write description&#34;&#10;  :url &#34;http://example.com/FIXME&#34;&#10;  :license &#123;:name &#34;Eclipse Public License&#34;&#10;            :url &#34;http://www.eclipse.org/legal/epl-v10.html&#34;&#125;&#10;  :dependencies [[org.clojure/clojure &#34;1.6.0&#34;][org.clojure/clojure &#34;1.5.1&#34;][overtone &#34;0.9.1&#34;]])</span><br></pre></td></tr></table></figure>
-<p>saved the file, then when I ran <code>lein repl</code> the dependencies got downloaded and… woohooo!!!!! boom I’m in :)</p>
+<p>saved the file, then when I ran <code>lein repl</code> the dependencies got downloaded and... woohooo!!!!! boom I'm in :)</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">--&#62; Loading Overtone...&#10;&#10;    _____                 __&#10;   / __  /_  _____  _____/ /_____  ____  ___&#10;  / / / / | / / _ \/ ___/ __/ __ \/ __ \/ _ \&#10; / /_/ /| |/ /  __/ /  / /_/ /_/ / / / /  __/&#10; \____/ |___/\___/_/   \__/\____/_/ /_/\___/</span><br></pre></td></tr></table></figure>
-<p>After this I was also able to clone Chris’s repo: <a href="https://github.com/ctford/whelmed" target="_blank" rel="external">https://github.com/ctford/whelmed</a></p>
+<p>After this I was also able to clone Chris's repo: <a href="https://github.com/ctford/whelmed" target="_blank" rel="external">https://github.com/ctford/whelmed</a></p>
 <p>I use some custom aliases to do this: <code>g c git@github.com:ctford/whelmed.git</code> which is basically <code>git clone git@github.com:ctford/whelmed.git</code> after that <code>cd whelmed</code>, <code>lein run</code> and now I get:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#3900; &#12388; &#9685;_&#9685; &#3901;&#12388;&#9889;  lein run&#10;--&#62; Loading Overtone...&#10;--&#62; Booting internal SuperCollider server...&#10;*** ERROR: open directory failed &#39;/Users/simonowen/Library/Application Support/SuperCollider/synthdefs&#39;&#10;Number of Devices: 2&#10;   0 : &#34;Built-in Microph&#34;&#10;   1 : &#34;Built-in Output&#34;&#10;&#10;&#34;Built-in Microph&#34; Input Device&#10;   Streams: 1&#10;      0  channels 2&#10;&#10;&#34;Built-in Output&#34; Output Device&#10;   Streams: 1&#10;      0  channels 2&#10;&#10;SC_AudioDriver: sample rate = 44100.000000, driver&#39;s block size = 512&#10;--&#62; Connecting to internal SuperCollider server...&#10;--&#62; Connection established&#10;&#10;    _____                 __&#10;   / __  /_  _____  _____/ /_____  ____  ___&#10;  / / / / | / / _ \/ ___/ __/ __ \/ __ \/ _ \&#10; / /_/ /| |/ /  __/ /  / /_/ /_/ / / / /  __/&#10; \____/ |___/\___/_/   \__/\____/_/ /_/\___/&#10;&#10;   Collaborative Programmable Music. v0.8&#10;&#10;&#10;Hello Simonowen, may algorithmic beauty pour forth from your fingertips today.&#10;&#10;late 0.026350804&#10;late 0.026350804</span><br></pre></td></tr></table></figure>
-<p>and this is now playing Chris’s song, lovely stuff, especially like the <code>shudder</code> sound.</p>
-<p>I just need to try and find out what’s going on with the <code>*** ERROR: open directory failed &#39;/Users/simonowen/Library/Application Support/SuperCollider/synthdefs&#39;</code> error now and I’m set.</p>
+<p>and this is now playing Chris's song, lovely stuff, especially like the <code>shudder</code> sound.</p>
+<p>I just need to try and find out what's going on with the <code>*** ERROR: open directory failed '/Users/simonowen/Library/Application Support/SuperCollider/synthdefs'</code> error now and I'm set.</p>
 <p>Nice chatting to Chris afterwards, thanks again!</p>
 
     
