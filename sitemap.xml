@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://s10wen.com/blog/2018/01/08/mcrfred-56-jo-franchetti/</loc>
+    <lastmod>2018-01-08T16:46:53.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>https://s10wen.com/blog/2018/01/08/first-week-freelance-front-end-developer-manchester/</loc>
     <lastmod>2018-01-08T15:56:38.000Z</lastmod>
   </url>
@@ -22,11 +27,6 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/contact/index.html</loc>
-    <lastmod>2017-12-23T12:09:08.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>https://s10wen.com/faces/index.html</loc>
     <lastmod>2017-12-23T12:09:08.000Z</lastmod>
   </url>
@@ -38,6 +38,11 @@
   
   <url>
     <loc>https://s10wen.com/styleguide/index.html</loc>
+    <lastmod>2017-12-23T12:09:08.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s10wen.com/contact/index.html</loc>
     <lastmod>2017-12-23T12:09:08.000Z</lastmod>
   </url>
   
@@ -237,12 +242,12 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2017/09/21/fix-the-white-bars-in-safari-on-iphone-x/</loc>
+    <loc>https://s10wen.com/blog/2017/05/09/mcrfred-50/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2017/05/09/mcrfred-50/</loc>
+    <loc>https://s10wen.com/blog/2017/09/21/fix-the-white-bars-in-safari-on-iphone-x/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
@@ -252,7 +257,7 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2017/07/24/mcrfred-55-freelance-special/</loc>
+    <loc>https://s10wen.com/blog/2017/04/06/mcrfred-49-frank-fenten/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
@@ -267,7 +272,7 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2017/04/06/mcrfred-49-frank-fenten/</loc>
+    <loc>https://s10wen.com/blog/2017/03/10/mcrfred-48-codepen/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
@@ -307,7 +312,7 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2017/03/10/mcrfred-48-codepen/</loc>
+    <loc>https://s10wen.com/blog/2017/07/17/mcrfred-52-alex-lakatos/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
@@ -582,7 +587,7 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2017/07/17/mcrfred-52-alex-lakatos/</loc>
+    <loc>https://s10wen.com/blog/2017/07/17/mcrfred-54-rapidfire/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
@@ -607,7 +612,7 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2017/07/17/mcrfred-54-rapidfire/</loc>
+    <loc>https://s10wen.com/blog/2017/07/24/mcrfred-55-freelance-special/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
@@ -1122,6 +1127,11 @@
   </url>
   
   <url>
+    <loc>https://s10wen.com/blog/2017/08/11/updating-firmware-on-fuji-xe2/</loc>
+    <lastmod>2017-09-19T20:46:22.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>https://s10wen.com/service-worker.js</loc>
     <lastmod>2017-09-19T20:46:22.000Z</lastmod>
   </url>
@@ -1133,11 +1143,6 @@
   
   <url>
     <loc>https://s10wen.com/manifest.json</loc>
-    <lastmod>2017-09-19T20:46:22.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://s10wen.com/blog/2017/08/11/updating-firmware-on-fuji-xe2/</loc>
     <lastmod>2017-09-19T20:46:22.000Z</lastmod>
   </url>
   
