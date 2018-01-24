@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://s10wen.com/blog/2018/01/24/takeaways-todd-gardners-talk-the-developers-guide-to-promoting-your-work/</loc>
+    <lastmod>2018-01-24T08:54:57.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s10wen.com/services/index.html</loc>
+    <lastmod>2018-01-18T06:51:20.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s10wen.com/contact/index.html</loc>
+    <lastmod>2018-01-17T09:04:57.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>https://s10wen.com/blog/2018/01/08/first-week-freelance-front-end-developer-manchester/</loc>
     <lastmod>2018-01-10T17:18:04.000Z</lastmod>
   </url>
@@ -17,22 +32,12 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2017/11/24/simon-owen-manchester-based-freelance-front-end-web-developer/</loc>
-    <lastmod>2017-12-23T12:09:08.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://s10wen.com/about/index.html</loc>
-    <lastmod>2017-12-23T12:09:08.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>https://s10wen.com/faces/index.html</loc>
     <lastmod>2017-12-23T12:09:08.000Z</lastmod>
   </url>
   
   <url>
-    <loc>https://s10wen.com/services/index.html</loc>
+    <loc>https://s10wen.com/blog/2017/11/24/simon-owen-manchester-based-freelance-front-end-web-developer/</loc>
     <lastmod>2017-12-23T12:09:08.000Z</lastmod>
   </url>
   
@@ -42,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/contact/index.html</loc>
+    <loc>https://s10wen.com/about/index.html</loc>
     <lastmod>2017-12-23T12:09:08.000Z</lastmod>
   </url>
   
@@ -582,12 +587,12 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2014/02/09/mcrfred-13-patrick-lauke/</loc>
+    <loc>https://s10wen.com/blog/2017/07/17/mcrfred-54-rapidfire/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2017/07/17/mcrfred-54-rapidfire/</loc>
+    <loc>https://s10wen.com/blog/2014/02/09/mcrfred-12-joe-critchley/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
@@ -1112,7 +1117,7 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2014/02/09/mcrfred-12-joe-critchley/</loc>
+    <loc>https://s10wen.com/blog/2014/02/09/mcrfred-13-patrick-lauke/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
