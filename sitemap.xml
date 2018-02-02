@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://s10wen.com/blog/2018/02/01/first-month-freelance-front-end-developer-manchester/</loc>
+    <lastmod>2018-02-02T11:12:48.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s10wen.com/blog/2015/12/07/free-simple-https-github-pages-cloudflare/</loc>
+    <lastmod>2018-02-01T15:45:28.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>https://s10wen.com/blog/2018/01/30/front-end-developer-workspace-net-magazine/</loc>
     <lastmod>2018-01-31T08:23:20.000Z</lastmod>
   </url>
@@ -37,11 +47,6 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/faces/index.html</loc>
-    <lastmod>2017-12-23T12:09:08.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>https://s10wen.com/blog/2017/11/24/simon-owen-manchester-based-freelance-front-end-web-developer/</loc>
     <lastmod>2017-12-23T12:09:08.000Z</lastmod>
   </url>
@@ -58,6 +63,11 @@
   
   <url>
     <loc>https://s10wen.com/blog/2014/11/01/mcrfred-20-lightning-talks/</loc>
+    <lastmod>2017-12-23T12:09:08.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s10wen.com/faces/index.html</loc>
     <lastmod>2017-12-23T12:09:08.000Z</lastmod>
   </url>
   
@@ -98,11 +108,6 @@
   
   <url>
     <loc>https://s10wen.com/blog/2014/01/06/simonowendesign-to-s10wen/</loc>
-    <lastmod>2017-11-26T08:54:16.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://s10wen.com/blog/2017/01/30/digihike/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
@@ -212,7 +217,7 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2015/12/07/free-simple-https-github-pages-cloudflare/</loc>
+    <loc>https://s10wen.com/blog/2017/07/17/mcrfred-52-alex-lakatos/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
@@ -252,7 +257,7 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2017/05/09/mcrfred-50/</loc>
+    <loc>https://s10wen.com/blog/2017/04/06/mcrfred-49-frank-fenten/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
@@ -267,7 +272,7 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2017/04/06/mcrfred-49-frank-fenten/</loc>
+    <loc>https://s10wen.com/blog/2017/03/10/mcrfred-48-codepen/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
@@ -282,7 +287,7 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2017/03/10/mcrfred-48-codepen/</loc>
+    <loc>https://s10wen.com/blog/2014/02/19/manchester-wordpress-user-group-february/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
@@ -322,7 +327,7 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2017/07/17/mcrfred-52-alex-lakatos/</loc>
+    <loc>https://s10wen.com/blog/2017/05/09/mcrfred-50/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
@@ -587,12 +592,12 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2014/02/19/manchester-wordpress-user-group-february/</loc>
+    <loc>https://s10wen.com/blog/2017/07/17/mcrfred-54-rapidfire/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2017/07/17/mcrfred-54-rapidfire/</loc>
+    <loc>https://s10wen.com/blog/2014/02/09/mcrfred-13-patrick-lauke/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
@@ -622,7 +627,7 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2017/07/24/mcrfred-55-freelance-special/</loc>
+    <loc>https://s10wen.com/blog/2017/06/06/mcrfred-51-mike-byrne/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
@@ -1097,7 +1102,7 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2017/06/06/mcrfred-51-mike-byrne/</loc>
+    <loc>https://s10wen.com/blog/2017/01/30/digihike/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
@@ -1112,7 +1117,7 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/thankyou/index.html</loc>
+    <loc>https://s10wen.com/blog/2017/07/24/mcrfred-55-freelance-special/</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
@@ -1122,13 +1127,18 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2014/02/09/mcrfred-13-patrick-lauke/</loc>
+    <loc>https://s10wen.com/thankyou/index.html</loc>
     <lastmod>2017-11-26T08:54:16.000Z</lastmod>
   </url>
   
   <url>
     <loc>https://s10wen.com/blog/2017/03/31/mcrfred-48-codepen-monkey-island-cause-effect/</loc>
     <lastmod>2017-11-21T18:31:51.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s10wen.com/sw-config.js</loc>
+    <lastmod>2017-09-19T20:46:22.000Z</lastmod>
   </url>
   
   <url>
@@ -1143,11 +1153,6 @@
   
   <url>
     <loc>https://s10wen.com/service-worker.js</loc>
-    <lastmod>2017-09-19T20:46:22.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://s10wen.com/sw-config.js</loc>
     <lastmod>2017-09-19T20:46:22.000Z</lastmod>
   </url>
   
@@ -1172,12 +1177,12 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2015/07/10/A-quick-note-on-writing-website-amends/</loc>
+    <loc>https://s10wen.com//404.html</loc>
     <lastmod>2015-12-06T13:56:06.000Z</lastmod>
   </url>
   
   <url>
-    <loc>https://s10wen.com//404.html</loc>
+    <loc>https://s10wen.com/blog/2015/07/10/A-quick-note-on-writing-website-amends/</loc>
     <lastmod>2015-12-06T13:56:06.000Z</lastmod>
   </url>
   
