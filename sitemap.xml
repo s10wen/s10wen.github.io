@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://s10wen.com/faces/index.html</loc>
+    <lastmod>2018-02-13T11:16:31.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>https://s10wen.com/blog/2018/02/01/first-month-freelance-front-end-developer-manchester/</loc>
     <lastmod>2018-02-05T09:21:13.000Z</lastmod>
   </url>
@@ -112,17 +117,12 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/blog/2017/11/24/simon-owen-manchester-based-freelance-front-end-web-developer/</loc>
-    <lastmod>2017-12-23T12:09:08.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>https://s10wen.com/styleguide/index.html</loc>
     <lastmod>2017-12-23T12:09:08.000Z</lastmod>
   </url>
   
   <url>
-    <loc>https://s10wen.com/about/index.html</loc>
+    <loc>https://s10wen.com/blog/2017/11/24/simon-owen-manchester-based-freelance-front-end-web-developer/</loc>
     <lastmod>2017-12-23T12:09:08.000Z</lastmod>
   </url>
   
@@ -132,7 +132,7 @@
   </url>
   
   <url>
-    <loc>https://s10wen.com/faces/index.html</loc>
+    <loc>https://s10wen.com/about/index.html</loc>
     <lastmod>2017-12-23T12:09:08.000Z</lastmod>
   </url>
   
